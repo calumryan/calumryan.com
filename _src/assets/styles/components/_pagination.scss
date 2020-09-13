@@ -1,0 +1,20 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination a {
+  font-family: var(--text-font-primary);
+  font-weight: 600;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.pagination .next svg {
+  margin-right: 0.5rem;
+}
+
+.pagination .prev svg {
+  margin-left: 0.5rem;
+}

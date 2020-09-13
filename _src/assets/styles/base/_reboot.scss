@@ -1,0 +1,83 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  line-height: 1.625;
+  color: var(--text-color);
+  background-color: var(--content-background-color);
+  -ms-text-size-adjust: 100%;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+footer,
+header,
+main,
+nav {
+  display: block;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+a {
+  color: currentColor;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+strong,
+b {
+  font-weight: 600;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  @media (prefers-color-scheme: dark) {
+    filter: brightness(0.8) contrast(1.2);
+  }
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--text-font-primary);
+  font-weight: 600;
+  text-rendering: optimizeLegibility;
+}

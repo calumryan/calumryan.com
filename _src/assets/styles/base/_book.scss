@@ -1,0 +1,97 @@
+.book__side {
+  background-color: #352748;
+  background-color: var(--brand-color-primary);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.book__side__bookmarks {
+  background-color: var(--post-bookmarks);
+}
+
+.book__side__articles {
+  background-color: var(--post-articles);
+}
+
+.book__side__notes {
+  background-color: var(--post-notes);
+}
+
+.book__side__rsvps {
+  background-color: var(--post-rsvps);
+}
+
+.book__side__replies {
+  background-color: var(--post-replies);
+}
+
+.book__side__events {
+  background-color: var(--post-events);
+}
+
+.book__side__likes {
+  background-color: var(--post-likes);
+}
+
+.book__side__speaking {
+  background-color: var(--post-speaking);
+}
+
+.book__side__checkins {
+  background-color: var(--post-checkins);
+}
+
+.book__side__reposts {
+  background-color: var(--post-reposts);
+}
+
+.book__side__events .month {
+  color: var(--post-events);
+}
+
+@media (min-width: 70em) and (min-height: 740px) {
+  .book {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: normal;
+    min-height: 100vh;
+  }
+  .book__side {
+    width: 33.333%;
+    min-height: 100vh;
+    max-width: var(--book-max-width);
+  }
+  .book__side > div {
+    position: sticky;
+    top: 0;
+  }
+  .book main {
+    width: 66.666%;
+    flex: 1;
+    /* max-width: var(--content-width); */
+  }
+  .book .footer {
+    position: fixed;
+    width: 33.333%;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    max-width: var(--book-max-width);
+  }
+  .book .footer__container,
+  .book .header__container {
+    margin-left: auto;
+    margin-right: 2rem;
+    padding-right: 0;
+  }
+}
+
+@media print {
+  .book__side,
+  .book .footer {
+    display: none;
+  }
+}

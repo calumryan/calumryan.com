@@ -1,0 +1,95 @@
+:root {
+  --bg-color: #fff;
+  --bg-note-color: #fff;
+  --bg-note-meta-color: #eee;
+  --bg-color-semitransparent: rgba(255, 255, 255, 0.85);
+  --bg-color-dark-semitransparent: rgba(0, 0, 0, 0.5);
+  --bg-color-secondary: #f7f7f9;
+  --bg-band: rgb(44, 62, 80);
+  --content-background-color: #f5f8fa;
+  --color-scheme: "light";
+  --text-color: #373a3c;
+  --text-color-secondary: #818a91;
+  --brand-color-primary: #352748;
+  --brand-color-primary-dark: #231930;
+  --link-color: #1d70b8;
+  --link-color-active: #005798;
+  --link-bg-color: #ffdd00;
+  --post-bookmarks: #b3023f;
+  --post-articles: #4a1034;
+  --post-notes: #0b3b55;
+  --post-rsvps: rgb(89, 0, 79);
+  --post-likes: rgb(98, 84, 3);
+  --post-replies: #4f6936;
+  --post-events: #057075;
+  --post-checkins: rgb(14, 45, 94);
+  --post-speaking: rgb(8, 115, 61);
+  --post-reposts: rgb(2, 73, 160);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-scheme: "dark";
+    --bg-color: #282828;
+    --bg-note-color: #1a1a1a;
+    --text-color: #ccc;
+    --link-color: #fff;
+    --link-color-active: #ccc;
+    --content-background-color: #282828;
+    --bg-note-meta-color: #222;
+  }
+}
+
+.bg-fallback {
+  background-color: #352748;
+}
+
+.bg-about,
+.bg-cv,
+.bg-rss {
+  background-color: var(--brand-color-primary);
+}
+
+.bg-cv--content {
+  background-color: var(--bg-note-meta-color);
+}
+
+.bg-bookmarks {
+  background-color: var(--post-bookmarks);
+}
+
+.bg-articles {
+  background-color: var(--post-articles);
+}
+
+.bg-notes {
+  background-color: var(--post-notes);
+}
+
+.bg-rsvps {
+  background-color: var(--post-rsvps);
+}
+
+.bg-likes {
+  background-color: var(--post-likes);
+}
+
+.bg-replies {
+  background-color: var(--post-replies);
+}
+
+.bg-events {
+  background-color: var(--post-events);
+}
+
+.bg-checkins {
+  background-color: var(--post-checkins);
+}
+
+.bg-speaking {
+  background-color: var(--post-speaking);
+}
+
+.bg-reposts {
+  background-color: var(--post-reposts);
+}

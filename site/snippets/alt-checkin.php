@@ -1,0 +1,1 @@
+<?= str_replace('Checked in at', 'View of', $page->text())?>

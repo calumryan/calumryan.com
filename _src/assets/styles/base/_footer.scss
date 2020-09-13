@@ -1,0 +1,38 @@
+.footer__container {
+  font-family: var(--text-font-primary);
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer__container small {
+  font-size: 0.875rem;
+  line-height: 1;
+  display: block;
+  margin: 0 0 var(--spacing-1) 0;
+}
+
+.footer__container small a {
+  text-decoration: underline;
+}
+
+.footer__container small a:hover {
+  text-decoration: none;
+}
+
+.footer__skip {
+  border-top: 0.1rem solid #ccc;
+  line-height: 1;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding: var(--spacing-3) 0;
+  margin: var(--spacing-4) 0;
+  @media (min-width: 70em) and (min-height: 740px) {
+    display: none;
+  }
+}
+
+.footer__skip svg {
+  margin-right: var(--spacing-1);
+}

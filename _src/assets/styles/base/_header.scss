@@ -1,0 +1,141 @@
+.header {
+  font-family: var(--text-font-primary);
+}
+
+.header .menu a {
+  position: relative;
+  padding: 0.5rem;
+  font-weight: 700;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.header .logo svg {
+  max-width: 3rem;
+  transition: transform 1.4s ease-in-out;
+  margin: 0 0.5rem 0 0;
+}
+
+.header .logo svg path {
+  stroke: #fff;
+  stroke-width: 1rem;
+}
+
+.header .logo:hover svg,
+.header .logo:focus svg {
+  transform: rotate(180deg);
+}
+
+.header .logo:hover svg path {
+  fill: #fff;
+}
+
+.header .logo:focus svg path {
+  fill: #000;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header .logo svg {
+    transform: none;
+    transition: none;
+  }
+}
+
+.header__strip {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  width: 100%;
+}
+
+.header__search {
+  padding: 0.5rem 0;
+  display: block;
+}
+
+.header__link {
+  font-weight: 600;
+  border-bottom: 2px solid currentColor;
+}
+
+.header__link:hover {
+  border-color: transparent;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu > * {
+  margin-left: 2rem;
+}
+
+.menu {
+  font-family: var(--text-font-primary);
+  font-weight: 600;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu a {
+  margin: 0 0.75rem;
+  padding: 0.5rem;
+  border-bottom: 2px solid currentColor;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.menu a:hover {
+  border-color: transparent;
+}
+
+.menu a[aria-current] {
+  background-color: #fff;
+  color: var(--brand-color-primary);
+  border-bottom: 2px solid #fff;
+}
+
+@media screen and (min-width: 40rem) {
+  .header .logo {
+    margin-bottom: 0;
+  }
+
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu {
+    margin-right: -0.75rem;
+  }
+}
+
+.skip-nav {
+  color: #000;
+  background-color: gold;
+  padding: 0.75rem;
+  font-weight: 600;
+  position: fixed;
+  text-decoration: none;
+  transition: color 0.15s ease-in;
+  outline: 1px dotted currentColor;
+  left: -9999em;
+}
+
+.skip-nav:focus {
+  left: 0;
+  z-index: 9999;
+}
+
+.petals-outline path {
+  fill: transparent;
+}

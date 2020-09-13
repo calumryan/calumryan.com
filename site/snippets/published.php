@@ -1,0 +1,1 @@
+<time datetime="<?= $post->date()->toDate('Y-m-d\TH:i:sP') ?>" class="dt-published" hidden></time>

@@ -1,0 +1,12 @@
+# This section blueprint defines a pages section that can be reused across multiple blueprints
+# or multiple times within the same blueprint, see `/site/blueprints/pages/rsvps.yml` and `/site/blueprints/site.yml`
+# Sections can have different layouts and display additional information or a preview image
+# More about pages sections: https://getkirby.com/docs/reference/panel/sections/pages
+type: pages
+headline: Replies ↩
+parent: kirby.page("replies")
+text: "{{ page.text }}"
+template: reply
+empty: No replies yet
+sortBy: uid desc
+limit: 5

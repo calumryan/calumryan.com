@@ -1,0 +1,40 @@
+.date-container {
+  display: flex;
+  justify-content: center;
+}
+
+.date-block {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  text-align: center;
+  border: 1px currentColor solid;
+  border-radius: 3px;
+  min-width: 4rem;
+  position: relative;
+}
+
+.date-block__end::before {
+  content: "~";
+  position: absolute;
+  left: -0.8rem;
+  top: 50%;
+  margin-top: -0.5rem;
+}
+
+.date-block .month {
+  text-transform: uppercase;
+  background-color: #fff;
+  font-size: 0.8em;
+  line-height: 1.2rem;
+  font-weight: 300;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.date-block .day {
+  font-size: 1.8em;
+  line-height: 1.5;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: currentColor;
+}

@@ -1,0 +1,150 @@
+:root {
+  --gallery-height: 60vh;
+}
+
+.notes {
+  --gallery-height: 40vh;
+}
+
+[aria-label="gallery"] {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-scroll-snap-type: mandatory;
+  -ms-scroll-snap-type: mandatory;
+  scroll-snap-type: mandatory;
+  -webkit-scroll-snap-points-x: repeat(100%);
+  -ms-scroll-snap-points-x: repeat(100%);
+  scroll-snap-points-x: repeat(100%);
+}
+
+[aria-label="gallery"]:focus,
+[aria-label="gallery controls"] button:focus,
+[aria-label="gallery"] a:focus img {
+  outline: 4px solid var(--link-bg-color);
+  outline-offset: -6px;
+}
+
+[aria-label="gallery controls"] button:focus {
+  outline-offset: -4px;
+}
+
+[aria-label="gallery"] ul {
+  display: flex;
+}
+
+[aria-label="gallery"] li {
+  list-style: none;
+  flex: 0 0 100%;
+  padding: 2rem;
+  height: var(--gallery-height);
+}
+
+[aria-label="gallery"] figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+[aria-label="gallery"] a:focus {
+  outline: none;
+}
+
+[aria-label="gallery"] figcaption {
+  padding: 0.5rem;
+  font-style: italic;
+  text-align: center;
+}
+
+[aria-label="gallery"] img {
+  min-height: 1px;
+  min-width: 1px;
+  max-height: calc(100% - 2rem);
+  max-width: 100%;
+}
+
+#instructions {
+  position: relative;
+}
+
+#instructions p {
+  padding: 1rem;
+  text-align: center;
+  color: #fefefe;
+  background-color: var(--link-color);
+}
+
+#focus,
+#hover,
+#hover-and-focus,
+#touch {
+  display: none;
+}
+
+[aria-label="gallery"]:focus + #instructions #focus,
+[aria-label="gallery"]:hover + #instructions #hover {
+  display: block;
+}
+
+[aria-label="gallery"]:hover + #instructions #hover + #focus {
+  display: none;
+}
+
+[aria-label="gallery"]:hover:focus + #instructions #hover,
+[aria-label="gallery"]:hover:focus + #instructions #focus {
+  display: none;
+}
+
+[aria-label="gallery"]:hover:focus + #instructions #hover-and-focus {
+  display: block;
+}
+
+#instructions svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: #fff;
+  vertical-align: -0.5rem;
+}
+
+.touch #instructions p {
+  display: none !important;
+}
+
+.touch #instructions #touch {
+  display: block !important;
+}
+
+.gallery {
+  position: relative;
+}
+
+[aria-label="gallery controls"] li {
+  list-style: none;
+}
+
+[aria-label="gallery controls"] button {
+  position: absolute;
+  top: 33.333%;
+  background: var(--link-color);
+  color: #fff;
+  border: 2px solid var(--link-color);
+  border-radius: 0.3rem;
+  width: 3rem;
+  height: calc(var(--gallery-height) / 4);
+  cursor: pointer;
+}
+
+#previous {
+  left: 0;
+}
+
+#next {
+  right: 0;
+}
+
+button svg {
+  width: 2rem;
+  height: 2rem;
+}

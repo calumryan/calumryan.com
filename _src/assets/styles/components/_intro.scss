@@ -1,0 +1,55 @@
+.intro {
+  padding: 5vh 0;
+  text-align: center;
+  font-family: var(--text-font-primary);
+}
+
+.intro h1 {
+  position: relative;
+  margin-bottom: 1rem;
+  font-size: calc(1vw + 2rem);
+  z-index: 1;
+  line-height: 1.2;
+}
+
+.intro p:not(.tags) {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.intro a {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.intro a:hover {
+  text-decoration: none;
+}
+
+.intro .icon:note(.icon--location) {
+  opacity: 0.3;
+}
+
+.intro-anchor {
+  margin: auto auto 1rem auto;
+  display: block;
+  float: none;
+  flex: auto;
+  width: auto;
+  max-width: 115px;
+}
+
+.intro-anchor img {
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+  border: 3px solid #fff;
+}
+
+.intro figure img {
+  border-radius: 50% 5%;
+  display: block;
+  margin: 2em auto;
+  width: 100%;
+  max-width: 500px;
+}

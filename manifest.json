@@ -1,0 +1,25 @@
+{
+  "name": "Calum Ryan",
+  "short_name": "Calum Ryan",
+  "description": "I develop, design, speak and write about websites, focusing on accessibility, inclusivity and performance.",
+  "dir": "ltr",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "assets/images/icon_300.png",
+      "sizes": "300x300",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/icon_512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#352748",
+  "background_color": "#FFF",
+  "display": "minimal-ui",
+  "orientation": "natural",
+  "start_url": "/",
+  "categories": ["technology", "web"]
+}

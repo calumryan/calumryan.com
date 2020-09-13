@@ -1,0 +1,53 @@
+
+VERSION 1  RELEASE
+==================
+
+   Version 1.2 - Release
+      15/04/2019 17:52  1.2.0  initial release
+         026ca9f Chore: composer update and stan
+         dfaff5f Feat: pageMethods for feed discovery
+         efdbda2 Refactor
+         d9ed043 Fix #2
+         fc89367 Docs: get composer install right
+
+   Version 1.1 - Install by Zip or Submodule
+      20/02/2019 21:23  1.1.0  initial release
+         c78d7f0 Chore: composer update
+         6e96b47 Chore: composer update
+         24032c3 Fix: better modified time calculation
+         e4bb384 Refactor: install by zip or submodule
+
+   Version 1.0 - Release
+      15/01/2019 20:11  1.0.0  initial release
+         b0b58d6 Chore: Kirby 3.0
+
+VERSION 0  BETA RELEASE
+=======================
+
+   Version 0.2 - beta release
+      08/01/2019 13:01  0.2.3  beta
+         5c7f224 Chore: stan
+         7d8a879 Chore: stan
+         333dafa Chore: RC2 or better, composer update
+         2650ba1 Chore: sanity issues
+         58e0e6a Docs: Coffee, Beer, etc.
+         885fabf Chore: kirby3-rc3
+      19/11/2018 12:08  0.2.2  beta release
+         34bb8c0 Chore: update
+         b0371ec Fix: feeds always from base (its a multilanguage thing)
+         48a5c66 Docs: feeds option in content/site.txt via blueprint
+         01fd29c Docs: clarify page's field use; closes #1
+         a6e398a Docs: formatting fix
+      22/10/2018 08:53  0.2.1  beta release
+         7c2380f Docs: edit formatting bloopers
+         aaf121f Docs: edit
+      12/10/2018 09:33  0.2.0  initial release
+         617395b Chore: composer update
+         90e716d Docs: edit for clarity
+         1b7f4f5 Feature: pick up Instagram for user
+         5af86a0 Docs: conditional get
+         53637ce Docs: edit
+         120321d Fix: description update
+
+   Version 0.1 - beta release
+      02/10/2018 14:21  0.1.0  initial release

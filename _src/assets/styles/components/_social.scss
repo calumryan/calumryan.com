@@ -1,0 +1,14 @@
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social a {
+  padding: 0 1rem;
+  width: 4.5rem;
+  display: block;
+}
+
+.social a:hover svg path {
+  fill: #000;
+}

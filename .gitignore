@@ -1,0 +1,50 @@
+# System files
+# ------------
+
+Icon
+.DS_Store
+node_modules/
+/node_modules/
+.env
+ignore-rsync.txt
+perms.sh
+
+# Temporary files
+# ---------------
+
+/media/*
+!/media/index.html
+
+# Lock files
+# ---------------
+.lock
+
+# -------------SECURITY-------------
+# NEVER publish these files via Git!
+# -------------SECURITY-------------
+
+# Cache Files
+# ---------------
+
+/site/cache/*
+!/site/cache/index.html
+
+# Accounts
+# ---------------
+
+/site/accounts/*
+!/site/accounts/index.html
+
+# Sessions
+# ---------------
+
+/site/sessions/*
+!/site/sessions/index.html
+
+# Config
+# ---------------
+/site/config/*
+
+# Compiled assets
+# ---------------
+/assets/

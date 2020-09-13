@@ -1,0 +1,6 @@
+{
+  "buildSrc": "_src",
+  "buildDest": "assets",
+  "assetSrc": "_src/assets",
+  "assetDest": "assets"
+}

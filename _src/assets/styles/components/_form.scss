@@ -1,0 +1,48 @@
+.form-search-wrapper {
+  display: flex;
+}
+
+.form-field,
+.form-label,
+.form-button {
+  font-family: var(--text-font-primary);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.form-label {
+  margin-bottom: 0.8rem;
+  display: block;
+  font-weight: 600;
+}
+
+.form-button {
+  background-color: var(--brand-color-primary);
+  border: 0;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+  padding: var(--spacing-2);
+
+  &:focus,
+  &:hover {
+    background-color: var(--brand-color-primary-dark);
+  }
+
+  &:focus {
+    outline: 0.2rem solid var(--link-bg-color);
+  }
+}
+
+.form-field {
+  padding: var(--spacing-2) var(--spacing-1);
+  flex: 1;
+  border-radius: 0;
+  border: 0.1rem solid var(--text-color);
+  margin-right: 0.2rem;
+  -webkit-appearance: none;
+  appearance: none;
+  &:focus {
+    outline: 0.2rem solid var(--link-bg-color);
+  }
+}

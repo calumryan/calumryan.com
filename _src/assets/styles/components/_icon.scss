@@ -1,0 +1,30 @@
+.icon {
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+.icon-side {
+  margin-right: 0.5rem;
+}
+
+.icon-inline {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.icon-inline .icon {
+  display: flex;
+  align-items: top;
+  margin-right: 0.5rem;
+}
+
+.fill-bookmarks path {
+  fill: var(--post-bookmarks);
+}
+
+@media (prefers-color-scheme: dark) {
+  .fill-notes path {
+    fill: #ccc;
+  }
+}

@@ -1,0 +1,1 @@
+<a href="<?= $site->url() ?>" class="intro-anchor u-url u-uid"><img src="/assets/images/icon.png?v20200704" alt="profile of Calum Ryan" class="u-photo" width="115" height="115"></a>

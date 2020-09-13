@@ -1,0 +1,47 @@
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+a.u-bookmark-of,
+a.link-long,
+.e-content a {
+  overflow-wrap: break-word;
+  white-space: initial;
+  hyphens: auto;
+}
+
+.link,
+.e-content a,
+.experience-list a {
+  text-decoration: underline;
+}
+
+.link:hover,
+.e-content a:hover,
+.experience-list a:hover,
+.text a:hover {
+  text-decoration: none;
+}
+
+/* Collective focus style */
+.text a:focus,
+.note a:focus,
+.intro a:focus,
+.header__link:focus,
+.logo:focus,
+.text-menu ul li a:focus,
+.link:focus,
+.e-content a:focus,
+a.header__search:focus,
+summary:focus,
+.experience-list a:focus {
+  color: #000;
+  background-color: var(--link-bg-color);
+}
