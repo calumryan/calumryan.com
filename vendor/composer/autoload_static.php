@@ -12,6 +12,7 @@ class ComposerStaticInit6efdd655650ced1ed59a5f37a4391392
         '04c6c5c2f7095ccf6c481d3e53e1776f' => __DIR__ . '/..' . '/mustangostang/spyc/Spyc.php',
         'f864ae44e8154e5ff6f4eec32f46d37f' => __DIR__ . '/../..' . '/kirby/config/setup.php',
         '757772e28a0943a9afe83def8db95bdf' => __DIR__ . '/..' . '/mf2/mf2/Mf2/Parser.php',
+        'f038e8b597e276e598f2ea8fd26f2367' => __DIR__ . '/..' . '/thathoff/kirby-git-content/config.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -45,6 +46,10 @@ class ComposerStaticInit6efdd655650ced1ed59a5f37a4391392
         'K' => 
         array (
             'Kirby\\' => 6,
+        ),
+        'B' => 
+        array (
+            'Blanko\\Kirby\\GCAPC\\' => 19,
         ),
     );
 
@@ -90,6 +95,10 @@ class ComposerStaticInit6efdd655650ced1ed59a5f37a4391392
             0 => __DIR__ . '/../..' . '/kirby/src',
             1 => __DIR__ . '/..' . '/getkirby/composer-installer/src',
         ),
+        'Blanko\\Kirby\\GCAPC\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/thathoff/kirby-git-content/src',
+        ),
     );
 
     public static $fallbackDirsPsr4 = array (
@@ -121,6 +130,10 @@ class ComposerStaticInit6efdd655650ced1ed59a5f37a4391392
     );
 
     public static $classMap = array (
+        'Blanko\\Kirby\\GCAPC\\KirbyGit' => __DIR__ . '/..' . '/thathoff/kirby-git-content/src/KirbyGit.php',
+        'Blanko\\Kirby\\GCAPC\\KirbyGitHelper' => __DIR__ . '/..' . '/thathoff/kirby-git-content/src/KirbyGitHelper.php',
+        'Git' => __DIR__ . '/..' . '/pascalmh/git.php/Git.php',
+        'GitRepo' => __DIR__ . '/..' . '/pascalmh/git.php/Git.php',
         'IndieWeb\\MentionClient' => __DIR__ . '/..' . '/indieweb/mention-client/src/IndieWeb/MentionClient.php',
         'IndieWeb\\MentionClientTest' => __DIR__ . '/..' . '/indieweb/mention-client/src/IndieWeb/MentionClientTest.php',
         'Kirby\\Api\\Api' => __DIR__ . '/../..' . '/kirby/src/Api/Api.php',

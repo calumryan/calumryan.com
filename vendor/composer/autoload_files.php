@@ -11,4 +11,5 @@ return array(
     '04c6c5c2f7095ccf6c481d3e53e1776f' => $vendorDir . '/mustangostang/spyc/Spyc.php',
     'f864ae44e8154e5ff6f4eec32f46d37f' => $baseDir . '/kirby/config/setup.php',
     '757772e28a0943a9afe83def8db95bdf' => $vendorDir . '/mf2/mf2/Mf2/Parser.php',
+    'f038e8b597e276e598f2ea8fd26f2367' => $vendorDir . '/thathoff/kirby-git-content/config.php',
 );

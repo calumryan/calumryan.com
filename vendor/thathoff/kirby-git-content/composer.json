@@ -1,0 +1,23 @@
+{
+  "name": "thathoff/kirby-git-content",
+  "description": "Plugin to track changes to content in a git repository.",
+  "type": "kirby-plugin",
+  "license": "MIT",
+  "require": {
+    "pascalmh/git.php": "^1.0",
+    "php": ">=7.1.0",
+    "getkirby/cms": "^3.0.0"
+  },
+  "autoload": {
+    "files": ["config.php"],
+    "psr-4": {
+      "Blanko\\Kirby\\GCAPC\\": "src/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/thathoff/kirby-git-content"
+    }
+  ]
+}

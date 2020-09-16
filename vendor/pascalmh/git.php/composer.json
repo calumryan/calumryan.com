@@ -1,0 +1,7 @@
+{
+    "name": "pascalmh/git.php",
+    "version": "1.0.0",
+    "autoload": {
+        "classmap": ["Git.php"]
+    }
+}
