@@ -26,8 +26,7 @@
     "getkirby/cms": "^3.0",
     "sylvainjule/locator": "^1.0",
     "indieweb/mention-client": "^1.1.6",
-    "omz13/kirby3-feeds": "^1.2",
-    "thathoff/kirby-git-content": "^3.0"
+    "omz13/kirby3-feeds": "^1.2"
   },
   "config": {
     "optimize-autoloader": true

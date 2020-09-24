@@ -6,10 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Blanko\\Kirby\\GCAPC\\KirbyGit' => $vendorDir . '/thathoff/kirby-git-content/src/KirbyGit.php',
-    'Blanko\\Kirby\\GCAPC\\KirbyGitHelper' => $vendorDir . '/thathoff/kirby-git-content/src/KirbyGitHelper.php',
-    'Git' => $vendorDir . '/pascalmh/git.php/Git.php',
-    'GitRepo' => $vendorDir . '/pascalmh/git.php/Git.php',
     'IndieWeb\\MentionClient' => $vendorDir . '/indieweb/mention-client/src/IndieWeb/MentionClient.php',
     'IndieWeb\\MentionClientTest' => $vendorDir . '/indieweb/mention-client/src/IndieWeb/MentionClientTest.php',
     'Kirby\\Api\\Api' => $baseDir . '/kirby/src/Api/Api.php',
