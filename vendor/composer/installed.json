@@ -658,6 +658,44 @@
         ]
     },
     {
+        "name": "oblik/kirby-git",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/OblikStudio/kirby-git.git",
+            "reference": "af98cb6d70a49154a90f79da84671e492a8fad88"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/OblikStudio/kirby-git/zipball/af98cb6d70a49154a90f79da84671e492a8fad88",
+            "reference": "af98cb6d70a49154a90f79da84671e492a8fad88",
+            "shasum": ""
+        },
+        "require": {
+            "getkirby/cms": "^3.4",
+            "getkirby/composer-installer": "^1.1"
+        },
+        "time": "2020-07-20T07:54:19+00:00",
+        "type": "kirby-plugin",
+        "extra": {
+            "installer-name": "git"
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Hristiyan Dodov",
+                "email": "h.dodov@gmail.com",
+                "homepage": "https://dodov.me/"
+            }
+        ],
+        "description": "Shows you Git changes in the Kirby panel and allows you to add/commit/push them, manually or automatically."
+    },
+    {
         "name": "omz13/kirby3-feeds",
         "version": "1.2.0",
         "version_normalized": "1.2.0.0",

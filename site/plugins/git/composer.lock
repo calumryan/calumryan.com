@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8c316bd7f9b4389f2fb86d4c4d71c51b",
+    "content-hash": "06b28f2ee98447b36c77003b13168481",
     "packages": [
         {
             "name": "claviska/simpleimage",
@@ -108,16 +108,16 @@
         },
         {
             "name": "getkirby/cms",
-            "version": "3.4.3",
+            "version": "3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getkirby/kirby.git",
-                "reference": "7525553b8d9976d6ed08b702f62fc3d368116777"
+                "reference": "dbd7fa7f303e7045626adb72c5f0b29c6ccadb44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getkirby/kirby/zipball/7525553b8d9976d6ed08b702f62fc3d368116777",
-                "reference": "7525553b8d9976d6ed08b702f62fc3d368116777",
+                "url": "https://api.github.com/repos/getkirby/kirby/zipball/dbd7fa7f303e7045626adb72c5f0b29c6ccadb44",
+                "reference": "dbd7fa7f303e7045626adb72c5f0b29c6ccadb44",
                 "shasum": ""
             },
             "require": {
@@ -163,27 +163,27 @@
                 "core",
                 "kirby"
             ],
-            "time": "2020-09-15T08:09:34+00:00"
+            "time": "2020-07-07T10:37:11+00:00"
         },
         {
             "name": "getkirby/composer-installer",
-            "version": "1.2.0",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getkirby/composer-installer.git",
-                "reference": "240a8b2c275d61b66601feb58222b7d34bc6cf1e"
+                "reference": "2d6b8f5601a31caeeea45623e1643fbb437eb94e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getkirby/composer-installer/zipball/240a8b2c275d61b66601feb58222b7d34bc6cf1e",
-                "reference": "240a8b2c275d61b66601feb58222b7d34bc6cf1e",
+                "url": "https://api.github.com/repos/getkirby/composer-installer/zipball/2d6b8f5601a31caeeea45623e1643fbb437eb94e",
+                "reference": "2d6b8f5601a31caeeea45623e1643fbb437eb94e",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0 || ^2.0"
+                "composer-plugin-api": "^1.0"
             },
             "require-dev": {
-                "composer/composer": "^1.8 || 2.0.*@dev",
+                "composer/composer": "^1.8",
                 "phpunit/phpunit": "^7.0"
             },
             "type": "composer-plugin",
@@ -201,49 +201,7 @@
             ],
             "description": "Kirby's custom Composer installer for the Kirby CMS and for Kirby plugins",
             "homepage": "https://getkirby.com",
-            "time": "2020-09-13T14:43:34+00:00"
-        },
-        {
-            "name": "indieweb/mention-client",
-            "version": "1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/indieweb/mention-client-php.git",
-                "reference": "12e3dc4b3f8f9ae82fa7a3953792bea33f59118a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/indieweb/mention-client-php/zipball/12e3dc4b3f8f9ae82fa7a3953792bea33f59118a",
-                "reference": "12e3dc4b3f8f9ae82fa7a3953792bea33f59118a",
-                "shasum": ""
-            },
-            "require": {
-                "mf2/mf2": ">=0.2",
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.8.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "IndieWeb": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Aaron Parecki",
-                    "email": "aaron@parecki.com",
-                    "homepage": "http://aaronparecki.com/"
-                }
-            ],
-            "description": "Client library for sending webmention and pingback notifications",
-            "homepage": "https://github.com/indieweb/mention-client-php",
-            "time": "2018-10-27T19:41:41+00:00"
+            "time": "2019-02-11T20:27:36+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
@@ -296,27 +254,31 @@
         },
         {
             "name": "laminas/laminas-zendframework-bridge",
-            "version": "1.1.1",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-zendframework-bridge.git",
-                "reference": "6ede70583e101030bcace4dcddd648f760ddf642"
+                "reference": "fcd87520e4943d968557803919523772475e8ea3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/6ede70583e101030bcace4dcddd648f760ddf642",
-                "reference": "6ede70583e101030bcace4dcddd648f760ddf642",
+                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/fcd87520e4943d968557803919523772475e8ea3",
+                "reference": "fcd87520e4943d968557803919523772475e8ea3",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.6 || ^7.0 || ^8.0"
+                "php": "^5.6 || ^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5 || ^8.1 || ^9.3",
+                "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5 || ^8.1",
                 "squizlabs/php_codesniffer": "^3.5"
             },
             "type": "library",
             "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev",
+                    "dev-develop": "1.1.x-dev"
+                },
                 "laminas": {
                     "module": "Laminas\\ZendFrameworkBridge"
                 }
@@ -340,13 +302,7 @@
                 "laminas",
                 "zf"
             ],
-            "funding": [
-                {
-                    "url": "https://funding.communitybridge.org/projects/laminas-project",
-                    "type": "community_bridge"
-                }
-            ],
-            "time": "2020-09-14T14:23:00+00:00"
+            "time": "2020-05-20T16:45:56+00:00"
         },
         {
             "name": "league/color-extractor",
@@ -401,144 +357,6 @@
                 "palette"
             ],
             "time": "2016-12-15T09:30:02+00:00"
-        },
-        {
-            "name": "league/html-to-markdown",
-            "version": "4.10.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/html-to-markdown.git",
-                "reference": "0868ae7a552e809e5cd8f93ba022071640408e88"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/html-to-markdown/zipball/0868ae7a552e809e5cd8f93ba022071640408e88",
-                "reference": "0868ae7a552e809e5cd8f93ba022071640408e88",
-                "shasum": ""
-            },
-            "require": {
-                "ext-dom": "*",
-                "ext-xml": "*",
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "mikehaertl/php-shellcommand": "~1.1.0",
-                "phpunit/phpunit": "^4.8|^5.7",
-                "scrutinizer/ocular": "~1.1"
-            },
-            "bin": [
-                "bin/html-to-markdown"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.10-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "League\\HTMLToMarkdown\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Colin O'Dell",
-                    "email": "colinodell@gmail.com",
-                    "homepage": "https://www.colinodell.com",
-                    "role": "Lead Developer"
-                },
-                {
-                    "name": "Nick Cernis",
-                    "email": "nick@cern.is",
-                    "homepage": "http://modernnerd.net",
-                    "role": "Original Author"
-                }
-            ],
-            "description": "An HTML-to-markdown conversion helper for PHP",
-            "homepage": "https://github.com/thephpleague/html-to-markdown",
-            "keywords": [
-                "html",
-                "markdown"
-            ],
-            "funding": [
-                {
-                    "url": "https://www.colinodell.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://www.paypal.me/colinpodell/10.00",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/colinodell",
-                    "type": "github"
-                },
-                {
-                    "url": "https://www.patreon.com/colinodell",
-                    "type": "patreon"
-                }
-            ],
-            "time": "2020-07-01T00:34:03+00:00"
-        },
-        {
-            "name": "mf2/mf2",
-            "version": "0.4.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/microformats/php-mf2.git",
-                "reference": "00b70ee7eb7f5b0585b1bd467f6c9cbd75055d23"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/microformats/php-mf2/zipball/00b70ee7eb7f5b0585b1bd467f6c9cbd75055d23",
-                "reference": "00b70ee7eb7f5b0585b1bd467f6c9cbd75055d23",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "mf2/tests": "@dev",
-                "phpdocumentor/phpdocumentor": "v2.8.4",
-                "phpunit/phpunit": "4.8.*"
-            },
-            "suggest": {
-                "barnabywalters/mf-cleaner": "To more easily handle the canonical data php-mf2 gives you",
-                "masterminds/html5": "Alternative HTML parser for PHP, for better HTML5 support."
-            },
-            "bin": [
-                "bin/fetch-mf2",
-                "bin/parse-mf2"
-            ],
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "Mf2/Parser.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "CC0-1.0"
-            ],
-            "authors": [
-                {
-                    "name": "Barnaby Walters",
-                    "homepage": "http://waterpigs.co.uk"
-                }
-            ],
-            "description": "A pure, generic microformats2 parser — makes HTML as easy to consume as a JSON API",
-            "keywords": [
-                "html",
-                "microformats",
-                "microformats 2",
-                "parser",
-                "semantic"
-            ],
-            "time": "2018-08-24T14:47:04+00:00"
         },
         {
             "name": "michelf/php-smartypants",
@@ -641,99 +459,6 @@
             "time": "2019-09-10T13:16:29+00:00"
         },
         {
-            "name": "oblik/kirby-git",
-            "version": "1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/OblikStudio/kirby-git.git",
-                "reference": "af98cb6d70a49154a90f79da84671e492a8fad88"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/OblikStudio/kirby-git/zipball/af98cb6d70a49154a90f79da84671e492a8fad88",
-                "reference": "af98cb6d70a49154a90f79da84671e492a8fad88",
-                "shasum": ""
-            },
-            "require": {
-                "getkirby/cms": "^3.4",
-                "getkirby/composer-installer": "^1.1"
-            },
-            "type": "kirby-plugin",
-            "extra": {
-                "installer-name": "git"
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Hristiyan Dodov",
-                    "email": "h.dodov@gmail.com",
-                    "homepage": "https://dodov.me/"
-                }
-            ],
-            "description": "Shows you Git changes in the Kirby panel and allows you to add/commit/push them, manually or automatically.",
-            "time": "2020-07-20T07:54:19+00:00"
-        },
-        {
-            "name": "omz13/kirby3-feeds",
-            "version": "1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/omz13/kirby3-feeds.git",
-                "reference": "b140b79c7a98ded81826bed5d920b333338cdbf2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/omz13/kirby3-feeds/zipball/b140b79c7a98ded81826bed5d920b333338cdbf2",
-                "reference": "b140b79c7a98ded81826bed5d920b333338cdbf2",
-                "shasum": ""
-            },
-            "require": {
-                "getkirby/composer-installer": "^1.1",
-                "league/html-to-markdown": "^4.8",
-                "php": ">=7.1"
-            },
-            "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
-                "getkirby/cms": "^3.0.1",
-                "jakub-onderka/php-parallel-lint": "^1.0",
-                "localheinz/composer-normalize": "^0.8.0",
-                "omz13/omz13-coding-standard": "dev-master",
-                "phpcompatibility/php-compatibility": "^8.2",
-                "phpmd/phpmd": "^2.6",
-                "phpstan/phpstan": "^0.10.3",
-                "phpstan/phpstan-strict-rules": "^0.10.1",
-                "roave/security-advisories": "dev-master"
-            },
-            "type": "kirby-plugin",
-            "autoload": {
-                "psr-4": {
-                    "omz13\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "David Somers",
-                    "email": "dsomers@omz13.com",
-                    "homepage": "https://meldingstuff.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "kirby3 plugin to generate syndication feeds (atom, json, rss) from collections",
-            "keywords": [
-                "Sitemap",
-                "kirby3",
-                "plugin"
-            ],
-            "time": "2019-04-15T17:52:41+00:00"
-        },
-        {
             "name": "phpmailer/phpmailer",
             "version": "v6.1.6",
             "source": {
@@ -793,12 +518,6 @@
                 }
             ],
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "funding": [
-                {
-                    "url": "https://github.com/synchro",
-                    "type": "github"
-                }
-            ],
             "time": "2020-05-27T12:24:03+00:00"
         },
         {
@@ -849,42 +568,8 @@
             "time": "2020-03-23T09:12:05+00:00"
         },
         {
-            "name": "sylvainjule/locator",
-            "version": "1.0.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sylvainjule/kirby-locator.git",
-                "reference": "53449d9466ce6188290a3e2d8b1355412c42525a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sylvainjule/kirby-locator/zipball/53449d9466ce6188290a3e2d8b1355412c42525a",
-                "reference": "53449d9466ce6188290a3e2d8b1355412c42525a",
-                "shasum": ""
-            },
-            "require": {
-                "getkirby/composer-installer": "^1.1"
-            },
-            "type": "kirby-plugin",
-            "extra": {
-                "installer-name": "locator"
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Sylvain Julé",
-                    "email": "contact@sylvain-jule.fr"
-                }
-            ],
-            "description": "A map & geolocation field, built on top of open-source services / Mapbox",
-            "time": "2020-04-10T11:20:46+00:00"
-        },
-        {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.18.1",
+            "version": "v1.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
@@ -943,20 +628,6 @@
                 "portable",
                 "shim"
             ],
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
             "time": "2020-07-14T12:35:20+00:00"
         },
         {
@@ -1012,9 +683,6 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {
-        "php": ">=7.1.0"
-    },
-    "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "platform": [],
+    "platform-dev": []
 }
