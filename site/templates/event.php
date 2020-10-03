@@ -3,8 +3,9 @@
 <main id="content" class="page page__center">
 
     <div class="note-text note-structure text-card h-entry">
+      <?= $page->text()->kt() ?>
       <p class="p-locality icon-inline heading-medium"><?php snippet('location', ['page' => $page]) ?><?= $page->city() ?></p>
-      <p class="p-location h-card content-body highlight"><?= $page->location() ?> </p>
+      <p class="p-location h-card content-body highlight"><strong>Location:</strong> <?= $page->location() ?> </p>
       <?php snippet('speaker', ['page' => $page]) ?>  
       <?php if ( $page->download_slides()->isNotEmpty() ) : ?>
       <section class="section-break">
