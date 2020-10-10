@@ -16,7 +16,9 @@ columns:
         extends: sections/notes
         headline: Drafts
         status: draft
-
+      changes:
+        type: git
+        headline: Git Status
   - width: 1/2
     # In the second column, we reuse the same section, this time for listed pages and with a different headline
     sections:
