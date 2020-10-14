@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'IndieWeb\\MentionClient' => $vendorDir . '/indieweb/mention-client/src/IndieWeb/MentionClient.php',
     'IndieWeb\\MentionClientTest' => $vendorDir . '/indieweb/mention-client/src/IndieWeb/MentionClientTest.php',
     'Kirby\\Api\\Api' => $baseDir . '/kirby/src/Api/Api.php',
@@ -292,5 +293,4 @@ return array(
     'Whoops\\Util\\SystemFacade' => $vendorDir . '/filp/whoops/src/Whoops/Util/SystemFacade.php',
     'Whoops\\Util\\TemplateHelper' => $vendorDir . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
     'claviska\\SimpleImage' => $vendorDir . '/claviska/simpleimage/src/claviska/SimpleImage.php',
-    'omz13\\Feeds' => $baseDir . '/site/plugins/kirby3-feeds/src/feeds.php',
 );
