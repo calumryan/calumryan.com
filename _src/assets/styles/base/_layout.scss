@@ -6,6 +6,7 @@
 
 .page {
   padding: var(--spacing-3);
+  content-visibility: auto;
 }
 
 @media (min-width: 40em) {
