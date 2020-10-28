@@ -37,6 +37,13 @@
   line-height: 1.5em;
 }
 
+.text-article > p,
+.text-article > ul > li,
+.text-article > ol > li {
+  font-size: 1.375rem;
+  line-height: 1.65rem;
+}
+
 .text p,
 .text figure,
 .text ul,

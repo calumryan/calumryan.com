@@ -5,7 +5,7 @@
     <article class="h-entry">
 
         <section id="summary" class="page-section">
-            <div class="text note-structure">
+            <div class="text text-article note-structure">
             <?= $page->text()->kt() ?>
             </div>
         </section>

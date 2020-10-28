@@ -5,7 +5,7 @@
 
   <article class="note h-entry">
 
-    <div class="text note-structure e-content">
+    <div class="text text-article note-structure e-content">
       <h1 class="p-name" hidden><?= $page->title() ?></h1>
       <?php if ( $page->description()->isNotEmpty() ) : ?><p class="p-summary"><strong><?= $page->description(); ?></strong></p><?php endif; ?>
       <?= $page->text()->kt() ?>

@@ -2,7 +2,7 @@
 
 <main id="content" class="page">
 
-    <article class="text note-structure h-entry">
+    <article class="text text-article note-structure h-entry">
       <?= $page->text()->kt() ?>
       <?php snippet('aside-more') ?>
       <?php snippet('post-meta',['post' => $page]) ?>

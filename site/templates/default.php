@@ -2,7 +2,7 @@
 
 <main id="content" class="page">
 
-  <div class="text note-structure">
+  <div class="text text-article note-structure">
     <?= $page->text()->kt() ?>
   </div>
 </main>

@@ -1,7 +1,7 @@
 <?php snippet('header') ?>
 
 <main id="content" class="page">
-    <div class="text note-structure note-summary">
+    <div class="text text-article note-structure note-summary">
     <?= $page->text()->kt(); ?>
     </div>
     <?php 
