@@ -40,8 +40,8 @@
 .text-article > p,
 .text-article > ul > li,
 .text-article > ol > li {
-  font-size: 1.375rem;
-  line-height: 1.65rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 
 .text p,
@@ -81,7 +81,6 @@
   white-space: nowrap;
   font-weight: 500;
   z-index: 1;
-  // display: inline-block;
   color: var(--link-color);
   text-decoration: underline;
 }
