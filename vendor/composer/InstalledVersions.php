@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '8a3ce0469f6767aeb75f51756d033893c48e3d33',
+    'reference' => '874d10a1eeaf574e3f7aa8e9cf687cf8b6122bac',
     'name' => 'getkirby/starterkit',
   ),
   'versions' => 
@@ -44,12 +44,12 @@ private static $installed = array (
     ),
     'getkirby/cms' => 
     array (
-      'pretty_version' => '3.4.4',
-      'version' => '3.4.4.0',
+      'pretty_version' => '3.4.5',
+      'version' => '3.4.5.0',
       'aliases' => 
       array (
       ),
-      'reference' => '6112f1cb8ebf9c36e8a9f97ae08acc910ddbc792',
+      'reference' => 'db8f371b13036861c9cc5ba3e85e27f73fce5e09',
     ),
     'getkirby/composer-installer' => 
     array (
@@ -67,7 +67,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '8a3ce0469f6767aeb75f51756d033893c48e3d33',
+      'reference' => '874d10a1eeaf574e3f7aa8e9cf687cf8b6122bac',
     ),
     'indieweb/mention-client' => 
     array (
@@ -186,21 +186,21 @@ private static $installed = array (
     ),
     'sylvainjule/locator' => 
     array (
-      'pretty_version' => '1.0.6',
-      'version' => '1.0.6.0',
+      'pretty_version' => '1.0.7',
+      'version' => '1.0.7.0',
       'aliases' => 
       array (
       ),
-      'reference' => '53449d9466ce6188290a3e2d8b1355412c42525a',
+      'reference' => '32b5f33ca56b824e6aee3bb207f2e3e5076cf087',
     ),
     'symfony/polyfill-mbstring' => 
     array (
-      'pretty_version' => 'v1.18.1',
-      'version' => '1.18.1.0',
+      'pretty_version' => 'v1.20.0',
+      'version' => '1.20.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'a6977d63bf9a0ad4c65cd352709e230876f9904a',
+      'reference' => '39d483bdf39be819deabf04ec872eb0b2410b531',
     ),
     'true/punycode' => 
     array (
