@@ -4,7 +4,7 @@
 <link rel="me" href="https://micro.blog/calumryan" />
 <link rel="me" href="mailto:hello@calumryan.com" />
 
-<?= selfauthEndpoint() ?>
+<?php // selfauthEndpoint() ?>
 <?php if (strpos($_SERVER['HTTP_HOST'], 'calumryan.com') !== false) : micropublisherEndpoints(); endif; ?>
 <link rel="microsub" href="https://aperture.p3k.io/microsub/151">
 

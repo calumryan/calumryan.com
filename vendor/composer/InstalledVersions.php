@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '874d10a1eeaf574e3f7aa8e9cf687cf8b6122bac',
+    'reference' => '575b5203041bb54ee984cae503baab347883da78',
     'name' => 'getkirby/starterkit',
   ),
   'versions' => 
@@ -67,7 +67,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '874d10a1eeaf574e3f7aa8e9cf687cf8b6122bac',
+      'reference' => '575b5203041bb54ee984cae503baab347883da78',
     ),
     'indieweb/mention-client' => 
     array (
