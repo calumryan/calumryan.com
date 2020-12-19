@@ -18,3 +18,9 @@
 .band-content svg {
   margin-right: var(--spacing-4);
 }
+.band-artwork {
+  max-width: var(--content-width);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--spacing-4);
+}
