@@ -83,9 +83,9 @@ tabs:
               type: text
             weather_icon:
               label: Weather icon
-              type: weather
+              type: text
               message: "weather_icon"
             temperature:
               label: Temperature
-              type: weather
+              type: text
               message: "temperature"

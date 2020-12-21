@@ -15,6 +15,6 @@ return array(
     'League\\HTMLToMarkdown\\' => array($vendorDir . '/league/html-to-markdown/src'),
     'Laminas\\ZendFrameworkBridge\\' => array($vendorDir . '/laminas/laminas-zendframework-bridge/src'),
     'Laminas\\Escaper\\' => array($vendorDir . '/laminas/laminas-escaper/src'),
-    'Kirby\\' => array($baseDir . '/kirby/src', $vendorDir . '/getkirby/composer-installer/src'),
+    'Kirby\\' => array($vendorDir . '/getkirby/composer-installer/src', $baseDir . '/kirby/src'),
     '' => array($vendorDir . '/league/color-extractor/src'),
 );

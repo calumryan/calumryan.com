@@ -6,37 +6,37 @@
     'aliases' => 
     array (
     ),
-    'reference' => '575b5203041bb54ee984cae503baab347883da78',
+    'reference' => 'd94a460f28c39bee124f39a52fabc0411c236098',
     'name' => 'getkirby/starterkit',
   ),
   'versions' => 
   array (
     'claviska/simpleimage' => 
     array (
-      'pretty_version' => '3.3.4',
-      'version' => '3.3.4.0',
+      'pretty_version' => '3.5.1',
+      'version' => '3.5.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => '3786d80af8e6d05e5e42f0350e5e5da5b92041a0',
+      'reference' => 'ab2ab8a4672738ab77b39b00922ee4e79aeadb11',
     ),
     'filp/whoops' => 
     array (
-      'pretty_version' => '2.7.2',
-      'version' => '2.7.2.0',
+      'pretty_version' => '2.9.1',
+      'version' => '2.9.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => '17d0d3f266c8f925ebd035cd36f83cf802b47d4a',
+      'reference' => '307fb34a5ab697461ec4c9db865b20ff2fd40771',
     ),
     'getkirby/cms' => 
     array (
-      'pretty_version' => '3.4.5',
-      'version' => '3.4.5.0',
+      'pretty_version' => '3.5.0',
+      'version' => '3.5.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'db8f371b13036861c9cc5ba3e85e27f73fce5e09',
+      'reference' => '0d2751af7cb478df14f30fac47fe9a2cd3b38114',
     ),
     'getkirby/composer-installer' => 
     array (
@@ -54,7 +54,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '575b5203041bb54ee984cae503baab347883da78',
+      'reference' => 'd94a460f28c39bee124f39a52fabc0411c236098',
     ),
     'indieweb/mention-client' => 
     array (
@@ -67,12 +67,12 @@
     ),
     'laminas/laminas-escaper' => 
     array (
-      'pretty_version' => '2.6.1',
-      'version' => '2.6.1.0',
+      'pretty_version' => '2.7.0',
+      'version' => '2.7.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '25f2a053eadfa92ddacb609dcbbc39362610da70',
+      'reference' => '5e04bc5ae5990b17159d79d331055e2c645e5cc5',
     ),
     'laminas/laminas-zendframework-bridge' => 
     array (
@@ -155,12 +155,12 @@
     ),
     'phpmailer/phpmailer' => 
     array (
-      'pretty_version' => 'v6.1.6',
-      'version' => '6.1.6.0',
+      'pretty_version' => 'v6.2.0',
+      'version' => '6.2.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'c2796cb1cb99d7717290b48c4e6f32cb6c60b7b3',
+      'reference' => 'e38888a75c070304ca5514197d4847a59a5c853f',
     ),
     'psr/log' => 
     array (
@@ -202,7 +202,7 @@
     array (
       'replaced' => 
       array (
-        0 => '2.6.1',
+        0 => '^2.6.1',
       ),
     ),
   ),
