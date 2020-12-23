@@ -48,6 +48,14 @@ tabs:
                 twitter: Twitter
             uid:
               type: text
+            weather_icon:
+              label: Weather icon
+              type: text
+              message: "weather_icon"
+            temperature:
+              label: Temperature
+              type: text
+              message: "temperature"
             feature_images:
               label: Images
               type: files
@@ -81,11 +89,3 @@ tabs:
             longitude:
               label: Longitude
               type: text
-            weather_icon:
-              label: Weather icon
-              type: text
-              message: "weather_icon"
-            temperature:
-              label: Temperature
-              type: text
-              message: "temperature"
