@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'd94a460f28c39bee124f39a52fabc0411c236098',
+    'reference' => 'a54e0b7b35344c4b6ecb6832218bfbd182d05601',
     'name' => 'getkirby/starterkit',
   ),
   'versions' => 
@@ -67,7 +67,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'd94a460f28c39bee124f39a52fabc0411c236098',
+      'reference' => 'a54e0b7b35344c4b6ecb6832218bfbd182d05601',
     ),
     'indieweb/mention-client' => 
     array (
@@ -147,15 +147,6 @@ private static $installed = array (
       array (
       ),
       'reference' => '4627c838b16550b666d15aeae1e5289dd5b77da0',
-    ),
-    'oblik/kirby-git' => 
-    array (
-      'pretty_version' => '1.2.0',
-      'version' => '1.2.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'af98cb6d70a49154a90f79da84671e492a8fad88',
     ),
     'omz13/kirby3-feeds' => 
     array (

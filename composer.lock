@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8c316bd7f9b4389f2fb86d4c4d71c51b",
+    "content-hash": "efb83d275ab5c60e6155fdd5d2d05e02",
     "packages": [
         {
             "name": "claviska/simpleimage",
@@ -709,46 +709,6 @@
                 "yml"
             ],
             "time": "2019-09-10T13:16:29+00:00"
-        },
-        {
-            "name": "oblik/kirby-git",
-            "version": "1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/OblikStudio/kirby-git.git",
-                "reference": "af98cb6d70a49154a90f79da84671e492a8fad88"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/OblikStudio/kirby-git/zipball/af98cb6d70a49154a90f79da84671e492a8fad88",
-                "reference": "af98cb6d70a49154a90f79da84671e492a8fad88",
-                "shasum": ""
-            },
-            "require": {
-                "getkirby/cms": "^3.4",
-                "getkirby/composer-installer": "^1.1"
-            },
-            "type": "kirby-plugin",
-            "extra": {
-                "installer-name": "git"
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Hristiyan Dodov",
-                    "email": "h.dodov@gmail.com",
-                    "homepage": "https://dodov.me/"
-                }
-            ],
-            "description": "Shows you Git changes in the Kirby panel and allows you to add/commit/push them, manually or automatically.",
-            "support": {
-                "issues": "https://github.com/OblikStudio/kirby-git/issues",
-                "source": "https://github.com/OblikStudio/kirby-git/tree/1.2.0"
-            },
-            "time": "2020-07-20T07:54:19+00:00"
         },
         {
             "name": "omz13/kirby3-feeds",
