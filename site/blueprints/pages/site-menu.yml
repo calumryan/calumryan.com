@@ -43,13 +43,16 @@ fields:
       title:
         label: Title
         type: text
-        width: 1/3
       url:
         label: URL
         type: text
-        width: 2/3
+      special:
+        label: Special
+        type: checkboxes
+        default:
+        options:
+          featured: Featured
       icon:
         label: Icon
         type: text
         size: small
-        width: 3/3

@@ -21,7 +21,7 @@
   <title><?= $page->title() ?> - <?= $site->title() ?></title>
   <?php endif ?>
 
-  <link href="<?= $site->url() ?>/assets/css/main.css?v20201223" rel="stylesheet">
+  <link href="<?= $site->url() ?>/assets/css/main.css?v20210130" rel="stylesheet">
 
   <?php  ?>
 
@@ -50,6 +50,18 @@
           </div>
 
         </div>
+
+        <nav aria-label="website" class="header__navigation nav-horizontal">
+          <?php if ($site_menu = page('site-menu')): ?>
+          <ul>
+            <?php foreach ($site_menu->links()->toStructure() as $item): ?>
+            <?php if ( $item->special()->isNotEmpty() ) : ?>
+            <li><a class="link icon-inline bg-fallback bg-<?= str_replace('/','',$item->url()) ?>" href="<?= $item->url() ?>"><?php if ( $item->icon()->isNotEmpty() ): ?><svg aria-hidden="true" focusable="false" class="icon" role="img" width="20" height="20"><use xmlnsXlink="http://www.w3.org/1999/xlink" xlink:href="<?= $site->url() ?>/assets/icons/icons.sprite.svg#icon-<?= $item->icon() ?>"></use></svg><?php endif; ?><?= $item->title() ?></a></li>
+            <?php endif ?>
+            <?php endforeach ?>
+          </ul>
+          <?php endif ?>
+        </nav>
 
         <?php snippet('intro') ?>
       </div>

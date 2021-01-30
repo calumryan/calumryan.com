@@ -28,3 +28,31 @@
   color: #fff;
   text-decoration: none;
 }
+
+.nav-horizontal li a:active {
+  color: #000;
+  text-decoration: none;
+}
+
+.header__navigation.nav-horizontal {
+  margin-top: -0.5rem;
+  background-color: transparent;
+  box-shadow: none;
+  // border-bottom: 2px solid currentColor;
+  padding: 0;
+  padding-bottom: var(--spacing-2);
+}
+
+.header__navigation.nav-horizontal ul {
+  justify-content: center;
+}
+
+.header__navigation.nav-horizontal li {
+  margin-right: 0.05rem;
+  margin-left: 0.05rem;
+  font-weight: 600;
+}
+
+.header__navigation.nav-horizontal a {
+  background-color: var(--bg-color-dark-semitransparent);
+}

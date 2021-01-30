@@ -41,7 +41,9 @@ a.link-long,
 .e-content a:focus,
 a.header__search:focus,
 summary:focus,
-.experience-list a:focus {
+.experience-list a:focus,
+.header__navigation.nav-horizontal a:focus,
+.nav-horizontal a:active {
   color: #000;
   background-color: var(--link-bg-color);
 }
