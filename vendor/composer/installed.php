@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'a54e0b7b35344c4b6ecb6832218bfbd182d05601',
+    'reference' => '6c7479081537ccff4a4fc79aa777a609b7a39ad7',
     'name' => 'getkirby/starterkit',
   ),
   'versions' => 
@@ -31,21 +31,21 @@
     ),
     'getkirby/cms' => 
     array (
-      'pretty_version' => '3.5.0',
-      'version' => '3.5.0.0',
+      'pretty_version' => '3.5.1',
+      'version' => '3.5.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => '0d2751af7cb478df14f30fac47fe9a2cd3b38114',
+      'reference' => '551e2f427eaf18e471df1c304552ab3de35e37c6',
     ),
     'getkirby/composer-installer' => 
     array (
-      'pretty_version' => '1.2.0',
-      'version' => '1.2.0.0',
+      'pretty_version' => '1.2.1',
+      'version' => '1.2.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => '240a8b2c275d61b66601feb58222b7d34bc6cf1e',
+      'reference' => 'c98ece30bfba45be7ce457e1102d1b169d922f3d',
     ),
     'getkirby/starterkit' => 
     array (
@@ -54,7 +54,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'a54e0b7b35344c4b6ecb6832218bfbd182d05601',
+      'reference' => '6c7479081537ccff4a4fc79aa777a609b7a39ad7',
     ),
     'indieweb/mention-client' => 
     array (
@@ -164,21 +164,21 @@
     ),
     'sylvainjule/locator' => 
     array (
-      'pretty_version' => '1.0.7',
-      'version' => '1.0.7.0',
+      'pretty_version' => '1.0.8',
+      'version' => '1.0.8.0',
       'aliases' => 
       array (
       ),
-      'reference' => '32b5f33ca56b824e6aee3bb207f2e3e5076cf087',
+      'reference' => '07f6cad4f6bd09489ee378e318b387c803392faa',
     ),
     'symfony/polyfill-mbstring' => 
     array (
-      'pretty_version' => 'v1.20.0',
-      'version' => '1.20.0.0',
+      'pretty_version' => 'v1.22.0',
+      'version' => '1.22.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '39d483bdf39be819deabf04ec872eb0b2410b531',
+      'reference' => 'f377a3dd1fde44d37b9831d68dc8dea3ffd28e13',
     ),
     'true/punycode' => 
     array (
