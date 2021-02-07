@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '6c7479081537ccff4a4fc79aa777a609b7a39ad7',
+    'reference' => 'e50f08900eefac51c690c718953be7ef918ceadf',
     'name' => 'getkirby/starterkit',
   ),
   'versions' => 
@@ -54,7 +54,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '6c7479081537ccff4a4fc79aa777a609b7a39ad7',
+      'reference' => 'e50f08900eefac51c690c718953be7ef918ceadf',
     ),
     'indieweb/mention-client' => 
     array (
