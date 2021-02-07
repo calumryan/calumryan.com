@@ -8,6 +8,7 @@ node_modules/
 .env
 ignore-rsync.txt
 perms.sh
+kirby/
 
 # Temporary files
 # ---------------
