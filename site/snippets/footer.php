@@ -18,7 +18,7 @@
       <?php snippet('indiewebring') ?>
 
       <?php if ($about = page('about')): ?>
-      <nav class="social">
+      <nav class="social" aria-label="Follow">
         <?php foreach ($about->social()->toStructure() as $social): ?>
         <a class="link" href="<?= $social->url() ?>" aria-label="<?= $social->platform() ?>" rel="me"><svg class="icon" width="40" height="40"><title></title><use xmlnsXlink="http://www.w3.org/1999/xlink" xlink:href="<?= $site->url() ?>/assets/icons/icons.sprite.svg#icon-<?= $social->icon() ?>"></use></svg></a>
         <?php endforeach ?>

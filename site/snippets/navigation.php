@@ -1,4 +1,4 @@
-<nav id="menu" class="menu" aria-label="primary menu">
+<nav id="menu" class="menu" aria-label="Primary">
 <ul>
 <?php 
 // In the menu, we only fetch listed pages, i.e. the pages that have a prepended number in their foldername

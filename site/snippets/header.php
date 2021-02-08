@@ -21,7 +21,7 @@
   <title><?= $page->title() ?> - <?= $site->title() ?></title>
   <?php endif ?>
 
-  <link href="<?= $site->url() ?>/assets/css/main.css?v20210207" rel="stylesheet">
+  <link href="<?= $site->url() ?>/assets/css/main.css?v202102072" rel="stylesheet">
 
   <?php  ?>
 
@@ -51,7 +51,7 @@
 
         </div>
 
-        <nav aria-label="website" class="header__navigation nav-horizontal">
+        <nav aria-label="Short" class="header__navigation nav-horizontal">
           <?php if ($site_menu = page('site-menu')): ?>
           <ul>
             <?php foreach ($site_menu->links()->toStructure() as $item): ?>
