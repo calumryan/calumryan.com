@@ -21,7 +21,7 @@
   <title><?= $page->title() ?> - <?= $site->title() ?></title>
   <?php endif ?>
 
-  <link href="<?= $site->url() ?>/assets/css/main.css?v202102072" rel="stylesheet">
+  <link href="<?= $site->url() ?>/assets/css/main.css?v202102132" rel="stylesheet">
 
   <?php  ?>
 
