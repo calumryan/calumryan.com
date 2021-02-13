@@ -18,7 +18,7 @@
       <li>   
         <a href="<?= $image->url() ?>">
           <figure>
-            <img data-src="<?= $image->url() ?>" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' /%3E" alt="<?= $image->alt() ?>">
+            <img class="u-photo" data-src="<?= $image->url() ?>" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' /%3E" alt="<?= $image->alt() ?>">
             <noscript>
               <img src="<?= $image->url() ?>" alt="<?= $image->alt() ?>">
             </noscript>
