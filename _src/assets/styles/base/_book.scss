@@ -10,6 +10,10 @@
   background-color: var(--post-bookmarks);
 }
 
+.book__side__bookshelf {
+  background-color: var(--post-bookshelf);
+}
+
 .book__side__articles {
   background-color: var(--post-articles);
 }
@@ -50,7 +54,7 @@
   color: var(--post-events);
 }
 
-@media (min-width: 70em) and (min-height: 740px) {
+@include for-sidebar {
   .book {
     display: flex;
     flex-flow: row wrap;

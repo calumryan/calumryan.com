@@ -11,7 +11,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media (min-width: 70em) and (min-height: 740px) {
+  @include for-sidebar {
     max-width: 100%;
   }
 }

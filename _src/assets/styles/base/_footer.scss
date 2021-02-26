@@ -28,7 +28,7 @@
   justify-content: center;
   padding: var(--spacing-3) 0;
   margin: var(--spacing-4) 0;
-  @media (min-width: 70em) and (min-height: 740px) {
+  @include for-sidebar {
     display: none;
   }
 }

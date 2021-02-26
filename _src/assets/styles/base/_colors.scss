@@ -6,6 +6,7 @@
   --bg-color-dark-semitransparent: rgba(0, 0, 0, 0.5);
   --bg-color-secondary: #f7f7f9;
   --bg-band: rgb(44, 62, 80);
+  --bg-book-page: #e6dcde;
   --content-background-color: #f5f8fa;
   --color-scheme: "light";
   --text-color: #373a3c;
@@ -25,6 +26,7 @@
   --post-checkins: rgb(14, 45, 94);
   --post-speaking: rgb(8, 115, 61);
   --post-reposts: rgb(2, 73, 160);
+  --post-bookshelf: rgb(58, 29, 35);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,6 +39,7 @@
     --link-color-active: #ccc;
     --content-background-color: #282828;
     --bg-note-meta-color: #222;
+    --bg-book-page: var(--post-bookshelf);
   }
 }
 
@@ -92,4 +95,8 @@
 
 .bg-reposts {
   background-color: var(--post-reposts);
+}
+
+.bg-bookshelf {
+  background-color: var(--post-bookshelf);
 }

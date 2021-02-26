@@ -1,0 +1,5 @@
+@mixin for-sidebar {
+  @media (min-width: 70em) and (min-height: 740px) {
+    @content;
+  }
+}
