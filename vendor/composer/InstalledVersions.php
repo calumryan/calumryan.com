@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'e50f08900eefac51c690c718953be7ef918ceadf',
+    'reference' => 'a815dca766276b42855e7a697c8385b1137c3151',
     'name' => 'getkirby/starterkit',
   ),
   'versions' => 
@@ -55,12 +55,12 @@ private static $installed = array (
     ),
     'getkirby/cms' => 
     array (
-      'pretty_version' => '3.5.1',
-      'version' => '3.5.1.0',
+      'pretty_version' => '3.5.3.1',
+      'version' => '3.5.3.1',
       'aliases' => 
       array (
       ),
-      'reference' => '551e2f427eaf18e471df1c304552ab3de35e37c6',
+      'reference' => '38afb2d650f3764d23d732b23ae8f04ab9ffba69',
     ),
     'getkirby/composer-installer' => 
     array (
@@ -78,7 +78,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'e50f08900eefac51c690c718953be7ef918ceadf',
+      'reference' => 'a815dca766276b42855e7a697c8385b1137c3151',
     ),
     'indieweb/mention-client' => 
     array (
@@ -100,12 +100,12 @@ private static $installed = array (
     ),
     'laminas/laminas-zendframework-bridge' => 
     array (
-      'pretty_version' => '1.1.1',
-      'version' => '1.1.1.0',
+      'pretty_version' => '1.2.0',
+      'version' => '1.2.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '6ede70583e101030bcace4dcddd648f760ddf642',
+      'reference' => '6cccbddfcfc742eb02158d6137ca5687d92cee32',
     ),
     'league/color-extractor' => 
     array (
@@ -197,12 +197,12 @@ private static $installed = array (
     ),
     'symfony/polyfill-mbstring' => 
     array (
-      'pretty_version' => 'v1.22.0',
-      'version' => '1.22.0.0',
+      'pretty_version' => 'v1.22.1',
+      'version' => '1.22.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'f377a3dd1fde44d37b9831d68dc8dea3ffd28e13',
+      'reference' => '5232de97ee3b75b0360528dae24e73db49566ab1',
     ),
     'true/punycode' => 
     array (
