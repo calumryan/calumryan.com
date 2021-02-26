@@ -5,7 +5,7 @@
     <ol class="webmentions__list webmentions__list__replies">
 
         <?php foreach ( $rsvps as $item ) : ?>
-        <?php $name = $item->data->author->name; ?>
+        <?php if ( isset( $item->data->author->name ) ) : $name = $item->data->author->name; ?>
         <li class="webmentions__item">
             <div class="webmention" id="webmention-<?= $item->id ?>">
                 <div class="webmention__meta">
@@ -33,6 +33,6 @@
                 <?php endif ?>
             </div>
         </li>
-        <?php endforeach ?>
+        <?php endif; endforeach; ?>
     </ol>
 </details>
