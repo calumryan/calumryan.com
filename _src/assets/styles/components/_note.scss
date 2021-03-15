@@ -1,9 +1,11 @@
 .notes {
   display: grid;
   font-family: var(--text-font-primary);
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  grid-gap: var(--spacing-5);
   margin: var(--spacing-5) 0;
+  grid-gap: var(--spacing-5);
+  @media (min-width: 300px) {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
 }
 
 .notes article,
