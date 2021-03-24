@@ -1,0 +1,30 @@
+.shelf {
+  position: relative;
+  border-bottom: 0.7rem solid var(--post-bookshelf);
+  display: block;
+  margin: auto auto var(--spacing-7) auto;
+  background-image: url("../images/shelf-mobile.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+
+  @media (min-width: 70em) {
+    border: none;
+    background-image: url("../images/shelf.svg");
+    background-size: 100% auto;
+    width: 600px;
+    height: 339px;
+    position: relative;
+    margin-top: var(--spacing-7);
+  }
+
+  img {
+    display: block;
+    margin: auto;
+    @media (min-width: 70em) {
+      position: absolute;
+      right: 311px;
+      bottom: 64px;
+    }
+  }
+}

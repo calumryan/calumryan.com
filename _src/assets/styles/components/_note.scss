@@ -22,6 +22,15 @@
   display: flex;
 }
 
+.note-picture,
+.note-picture img {
+  display: block;
+  min-width: 200px;
+}
+
+.note-header__side {
+  margin-left: var(--spacing-4);
+}
 .notes li {
   list-style-type: none;
 }
@@ -71,7 +80,8 @@
     font-size: var(--spacing-5);
   } */
 
-.note time {
+.note time,
+.note .meta {
   font-size: 0.75rem;
 }
 
@@ -102,6 +112,18 @@
 
 .note-reply > div {
   margin-right: 1rem;
+}
+
+.note-book {
+  @media (min-width: 30em) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.note-book__meta {
+  background-color: var(--bg-book-page);
+  padding: var(--spacing-4);
 }
 
 .note-text .note-reply {

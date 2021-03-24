@@ -1,6 +1,7 @@
 // ---------------------------------
 // MASTER STYLESHEET INDEX
 // ---------------------------------
+@import "base/mixins";
 @import "base/reboot";
 @import "base/fonts";
 @import "base/colors";
@@ -19,6 +20,7 @@
 // partials with local scope to a component
 //--------------------
 @import "components/band";
+@import "components/bookshelf";
 @import "components/intro";
 @import "components/cv";
 @import "components/embed";

@@ -1,0 +1,12 @@
+type: pages
+headline: Bookshelf 📚
+parent: kirby.page("bookshelf")
+template: book
+empty: No books yet
+sortBy: date desc
+limit: 5
+category:
+  label: Category
+  type: tags
+  options: query
+  query: site.index.pluck("tags", ",", true)
