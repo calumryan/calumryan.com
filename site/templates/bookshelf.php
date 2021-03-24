@@ -10,7 +10,7 @@
     <?php if ( $note->feature_images()->isNotEmpty() ) : ?>
     <picture class="shelf">
         <?php $images = $note->feature_images()->toFiles(); foreach($images as $image): ?>
-        <img loading="lazy" class="u-photo" src="<?= $image->resize(200,300)->url() ?>" alt="<?= $image->alt() ?>" width="200" height="300">
+        <img loading="lazy" class="u-photo" src="<?= $image->resize(200,300)->url() ?>" alt="<?= $image->alt() ?> on a bookshelf" width="200" height="300">
         <?php endforeach; ?>
     </picture>
     <?php endif ?>
