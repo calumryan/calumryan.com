@@ -272,3 +272,14 @@
   background-color: #fff;
   color: #000;
 }
+
+.note-panel .note-header {
+  display: block;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  row-gap: 1rem;
+}
+
+.note-panel .note-header .note-picture {
+  margin: 0 auto;
+}

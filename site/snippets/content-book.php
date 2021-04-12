@@ -1,4 +1,4 @@
-<article class="note">
+<article class="note note-panel">
   <div class="note-header">
     <?php if ( $post->feature_images()->isNotEmpty() ) : ?>
     <picture class="note-picture">
