@@ -23,7 +23,7 @@
         <header>
           <?php foreach ($articles as $article): ?>
           <h2 class="heading-medium"><a class="p-name name link" href="<?= $article->url() ?>"><?= $article->title() ?></a></h2>
-          <?php if ( $article->description()->isNotEmpty() ) : ?><p class="p-summary"><?= $article->description(); ?></p><?php endif; ?>
+          <?php if ( $article->description()->isNotEmpty() ) : ?><p class="p-summary text"><?= $article->description(); ?></p><?php endif; ?>
           <?php endforeach ?>
         </header>
       </div>
