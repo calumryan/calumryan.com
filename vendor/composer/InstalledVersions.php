@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'a815dca766276b42855e7a697c8385b1137c3151',
+    'reference' => 'e67128593d11d99f486d38ec3f8d7711c5b464f8',
     'name' => 'getkirby/starterkit',
   ),
   'versions' => 
@@ -55,12 +55,12 @@ private static $installed = array (
     ),
     'getkirby/cms' => 
     array (
-      'pretty_version' => '3.5.3.1',
-      'version' => '3.5.3.1',
+      'pretty_version' => '3.5.4',
+      'version' => '3.5.4.0',
       'aliases' => 
       array (
       ),
-      'reference' => '38afb2d650f3764d23d732b23ae8f04ab9ffba69',
+      'reference' => '3d580d869e44496c8b145835d4bbbbe95e7559d8',
     ),
     'getkirby/composer-installer' => 
     array (
@@ -78,7 +78,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'a815dca766276b42855e7a697c8385b1137c3151',
+      'reference' => 'e67128593d11d99f486d38ec3f8d7711c5b464f8',
     ),
     'indieweb/mention-client' => 
     array (
