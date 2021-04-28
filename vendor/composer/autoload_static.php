@@ -7,8 +7,8 @@ namespace Composer\Autoload;
 class ComposerStaticInit6efdd655650ced1ed59a5f37a4391392
 {
     public static $files = array (
-        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '7e9bd612cc444b3eed788ebbe46263a0' => __DIR__ . '/..' . '/laminas/laminas-zendframework-bridge/src/autoload.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '04c6c5c2f7095ccf6c481d3e53e1776f' => __DIR__ . '/..' . '/mustangostang/spyc/Spyc.php',
         '757772e28a0943a9afe83def8db95bdf' => __DIR__ . '/..' . '/mf2/mf2/Mf2/Parser.php',
         'f864ae44e8154e5ff6f4eec32f46d37f' => __DIR__ . '/../..' . '/kirby/config/setup.php',
@@ -321,6 +321,11 @@ class ComposerStaticInit6efdd655650ced1ed59a5f37a4391392
         'Kirby\\Parsley\\Schema' => __DIR__ . '/../..' . '/kirby/src/Parsley/Schema.php',
         'Kirby\\Parsley\\Schema\\Blocks' => __DIR__ . '/../..' . '/kirby/src/Parsley/Schema/Blocks.php',
         'Kirby\\Parsley\\Schema\\Plain' => __DIR__ . '/../..' . '/kirby/src/Parsley/Schema/Plain.php',
+        'Kirby\\Sane\\Handler' => __DIR__ . '/../..' . '/kirby/src/Sane/Handler.php',
+        'Kirby\\Sane\\Sane' => __DIR__ . '/../..' . '/kirby/src/Sane/Sane.php',
+        'Kirby\\Sane\\Svg' => __DIR__ . '/../..' . '/kirby/src/Sane/Svg.php',
+        'Kirby\\Sane\\Svgz' => __DIR__ . '/../..' . '/kirby/src/Sane/Svgz.php',
+        'Kirby\\Sane\\Xml' => __DIR__ . '/../..' . '/kirby/src/Sane/Xml.php',
         'Kirby\\Session\\AutoSession' => __DIR__ . '/../..' . '/kirby/src/Session/AutoSession.php',
         'Kirby\\Session\\FileSessionStore' => __DIR__ . '/../..' . '/kirby/src/Session/FileSessionStore.php',
         'Kirby\\Session\\Session' => __DIR__ . '/../..' . '/kirby/src/Session/Session.php',
