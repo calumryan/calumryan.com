@@ -118,6 +118,14 @@
 
 .gallery {
   position: relative;
+  a {
+    display: block;
+    margin-bottom: var(--spacing-3);
+    &:focus img {
+      outline: 4px solid var(--link-bg-color);
+      outline-offset: -6px;
+    }
+  }
 }
 
 [aria-label="gallery controls"] li {

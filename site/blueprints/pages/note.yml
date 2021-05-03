@@ -62,7 +62,7 @@ tabs:
               type: files
               uploads: false,
               min: 0
-              max: 3
+              max: 4
               cover: true
             tags: true
   # meta information
