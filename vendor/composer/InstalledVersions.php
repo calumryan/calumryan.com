@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'e67128593d11d99f486d38ec3f8d7711c5b464f8',
+    'reference' => '1c395c49fc4909e62cc77b73d13cd6d58b109938',
     'name' => 'getkirby/starterkit',
   ),
   'versions' => 
@@ -78,7 +78,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'e67128593d11d99f486d38ec3f8d7711c5b464f8',
+      'reference' => '1c395c49fc4909e62cc77b73d13cd6d58b109938',
     ),
     'indieweb/mention-client' => 
     array (
@@ -179,12 +179,12 @@ private static $installed = array (
     ),
     'psr/log' => 
     array (
-      'pretty_version' => '1.1.3',
-      'version' => '1.1.3.0',
+      'pretty_version' => '1.1.4',
+      'version' => '1.1.4.0',
       'aliases' => 
       array (
       ),
-      'reference' => '0f73288fd15629204f9d42b7055f72dacbe811fc',
+      'reference' => 'd49695b909c3b7628b6289db5479a1c204601f11',
     ),
     'sylvainjule/locator' => 
     array (
