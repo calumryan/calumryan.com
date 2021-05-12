@@ -6,7 +6,7 @@
   <?php snippet('link-archive',['post' => $page]) ?>
   <?php snippet('post-meta',['post' => $page]) ?>
   </div>
-  
+  <?php snippet('mentions', ['page' => $page]) ?>
 </main>
 
 <?php snippet('footer') ?>
