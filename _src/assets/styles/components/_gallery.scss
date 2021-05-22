@@ -121,6 +121,9 @@
   a {
     display: block;
     margin-bottom: var(--spacing-3);
+    &:focus {
+      background-color: transparent;
+    }
     &:focus img {
       outline: 4px solid var(--link-bg-color);
       outline-offset: -6px;
