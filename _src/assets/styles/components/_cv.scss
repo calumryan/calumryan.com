@@ -36,7 +36,7 @@ ul.cv-list {
       border-radius: 50%;
       box-shadow: 0 0 0 3px white;
       position: absolute;
-      top: 20px;
+      top: 14px;
       z-index: 1;
       left: -28px;
     }
@@ -58,6 +58,11 @@ ul.cv-list {
     left: 0;
     margin-left: -3px;
   }
+}
+
+.experience-list__icon {
+  margin-bottom: var(--spacing-1);
+  display: block;
 }
 
 .experience {

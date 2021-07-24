@@ -20,7 +20,7 @@
                     <h3 class="p-experience heading-medium"><span class="p-job-title" itemprop="roleName"><?= $role->role_name() ?></span><br><a
                         class="p-name org u-url url" itemprop="name" rel="noreferrer noopener" target="_blank"
                         href="<?= $role->org_url() ?>"><?= $role->org() ?></a></h3>
-
+                    <?php if ( $role->icon()->isNotEmpty() ) : ?><img width="100" height="100" src="<?= $site->url() ?>/assets/images/<?= $role->icon() ?>" alt="<?= $role->org() ?> logo" class="experience-list__icon"><?php endif ?>
                     <?php if ( $role->current()->isEmpty() ) : ?>
                     <time class="dt-start" datetime="<?= $role->start_date()->toDate('y-m-d') ?>" itemprop="startDate"><?=
                     $role->start_date()->toDate('F Y') ?></time> - <time class="dt-end" datetime="<?= $role->end_date()->toDate('y-m-d') ?>" itemprop="endDate"><?= $role->end_date()->toDate('F Y') ?></time>
@@ -28,7 +28,8 @@
                     <time class="dt-start" datetime="<?= $role->start_date() ?>" itemprop="startDate"><?=
                     $role->start_date()->toDate('F Y') ?></time> - <time class="dt-end" datetime="<?= date('y-m-d') ?>"
                     itemprop="endDate">Present</time>
-                    <?php endif; ?>
+                    <?php endif; ?> | 
+                    <strong><?php if ( $role->type()->isNotEmpty() ) : echo $role->type(); endif ?></strong>
 
                     </header>
 
@@ -60,7 +61,13 @@
                 <h2>Talks, publication &amp; exhibition</h2>
 
                 <ul class="cv-events">
-                    <li class="h-event event-summary">
+                <li class="h-event event-summary">
+                        <time class="dt-start" datetime="2020-09-24">2020</time>
+                        <h3><a class="p-name u-url" href="https://noti.st/calumryan/ommFNm/making-accessible-accessibility-reports">Making accessible accessibility reports</a></h3>
+                        <p>Public speaking engagement at <a href="https://wpaccessibilityday.org/" class="p-organisation" rel="noreferrer noopener" target="_blank">WP Accessibility Day </a>
+                        <br><strong class="p-location">Online</strong></p>
+                    </li>
+                <li class="h-event event-summary">
                         <time class="dt-start" datetime="2019-04-25">2019</time>
                         <h3><a class="p-name u-url" href="https://noti.st/calumryan/SDJFrp/usability-testing">Usability testing (Presentation)</a></h3>
                         <p>Public speaking engagement at <a href="https://frontendlondon.co.uk/" class="p-organisation" rel="noreferrer noopener" target="_blank">Front-End London</a>
