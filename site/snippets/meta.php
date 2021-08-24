@@ -28,7 +28,10 @@
 <meta name="og:description" content="<?= $page->text() ?>" />
 <meta name="description" content="<?= $page->text() ?>" />
 <?php endif ?>
-<?php if ( $page->thumbnail()->isNotEmpty() ) : ?>
+<?php if ( $image = $page->og_thumbnail()->toFile() ) : ?>
+<meta name="twitter:image" content="<?php echo $image->url() ?>">
+<meta property="og:image" content="<?php echo $image->url() ?>" />
+<?php elseif ( $page->thumbnail()->isNotEmpty() ) : ?>
 <meta name="twitter:image" content="<?= $site->url().'/'.$page->thumbnail() ?>">
 <meta property="og:image" content="<?= $site->url().'/'.$page->thumbnail() ?>" />
 <?php elseif ( $page->parents() == 'bookmarks' ) : ?>

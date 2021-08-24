@@ -73,3 +73,10 @@ columns:
             #   cover: true
             # Use the `help` property of fields and section to provide editors with helpful information
             help: Place the {{ gallery }} tag anywhere in your text to add the selected gallery
+          og_thumbnail:
+            label: OG thumbnail
+            type: files
+            uploads: false,
+            min: 0
+            max: 1
+            cover: false
