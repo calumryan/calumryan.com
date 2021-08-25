@@ -29,8 +29,8 @@
 <meta name="description" content="<?= $page->text() ?>" />
 <?php endif ?>
 <?php if ( $image = $page->og_thumbnail()->toFile() ) : ?>
-<meta name="twitter:image" content="<?php echo $image->url() ?>">
-<meta property="og:image" content="<?php echo $image->url() ?>" />
+<meta name="twitter:image" content="<?php echo $image->resize(1000)->url() ?>">
+<meta property="og:image" content="<?php echo $image->resize(1000)->url() ?>" />
 <?php elseif ( $page->thumbnail()->isNotEmpty() ) : ?>
 <meta name="twitter:image" content="<?= $site->url().'/'.$page->thumbnail() ?>">
 <meta property="og:image" content="<?= $site->url().'/'.$page->thumbnail() ?>" />
