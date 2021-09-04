@@ -8,8 +8,6 @@
 <?php if (strpos($_SERVER['HTTP_HOST'], 'calumryan.com') !== false) : micropublisherEndpoints(); endif; ?>
 <link rel="microsub" href="https://aperture.p3k.io/microsub/151">
 
-<script async defer data-domain="calumryan.com" src="https://plausible.io/js/plausible.js"></script>
-
 <?php snippet('feeds-header') ?>
 
 <!-- Hey thanks for checking out the source code, this is where the magic happens! -->
