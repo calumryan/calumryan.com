@@ -6,6 +6,10 @@
     <h2 class="sr-only p-name"><?= $post->date()->toDate('d F Y h:m T') ?></h2>
     <div class="e-content"><?= $post->text()->kt() ?></div>
   </header>
+  <?php if ( $post->location_data()->isNotEmpty() ): ?>
+  <?php snippet('image',['post' => $post]) ?>
+  <?php else: ?>
   <?php snippet('content-picture',['post' => $post]) ?>
+  <?php endif ?>
   <?php snippet('content-footer',['post' => $post]) ?>
 </article>

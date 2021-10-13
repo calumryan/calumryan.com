@@ -1,16 +1,27 @@
 <?php 
-    $location = $page->locator()->yaml(); 
+
+    if ( $page->locator()->isNotEmpty() ) :
+        $location = $page->locator()->yaml(); 
+    elseif ( $page->location_data()->isNotEmpty() ):
+        foreach ($page->location_data()->toStructure() as $loc):
+        $property = $loc->properties()->yaml();
+        endforeach;
+    endif;
+
     if(!empty($location['lat'])) {
         $latitude =  $location['lat'];
         $longitude =  $location['lon'];
     } elseif( $page->latitude()->isNotEmpty() ) {
         $latitude =  $page->latitude();
         $longitude = $page->longitude();
+    } elseif( $page->location_data()->isNotEmpty() ) {
+        $latitude =  $property['latitude'][0];
+        $longitude = $property['longitude'][0];
     }
 ?>
 
 
-<?php if ( $page->latitude()->isNotEmpty() || isset($location['lat']) ) : ?>
+<?php if ( isset($latitude) ) : ?>
 <?php $string = 'Checked in at '; ?>
 <a class="link p-location" href="http://www.openstreetmap.org/?mlat=<?= $latitude ?>&mlon=<?= $longitude ?>&zoom=12"><svg class="icon icon--location" aria-hidden="true" width="20" height="20"><use xmlnsXlink="http://www.w3.org/1999/xlink" xlink:href="<?= $site->url() ?>/assets/icons/icons.sprite.svg#icon-location"></use></svg><span class="sr-only">View location on OpenStreet map of <?= str_replace($string,'', $page->text()) ?></span></a>   
 <span class="h-adr" hidden>
