@@ -49,3 +49,5 @@ kirby/
 # Compiled assets
 # ---------------
 /assets/
+
+/vendor/
