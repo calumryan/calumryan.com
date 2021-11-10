@@ -33,18 +33,14 @@
 
                     </header>
 
-                    <ul class="cv-list">
-                        <li>
-                            <?php if ( $role->summary()->isNotEmpty() ) :?>
-                            <p class="p-summary"><?= $role->summary() ?></p>
-                            <?php endif ?>
+                    <?php if ( $role->summary()->isNotEmpty() ) :?>
+                    <p class="p-summary"><?= $role->summary() ?></p>
+                    <?php endif ?>
 
-                            <ul class="points">
-                                <?php foreach ( $role->points()->toStructure() as $item ) : ?>
-                                <li><?= $item->point() ?></li>
-                                <?php endforeach; ?>
-                            </ul>
-                        </li>
+                    <ul class="points">
+                        <?php foreach ( $role->points()->toStructure() as $item ) : ?>
+                        <li><?= $item->point() ?></li>
+                        <?php endforeach; ?>
                     </ul>
 
                 </div>
