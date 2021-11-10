@@ -11,8 +11,6 @@
 <html lang="en">
 <head>
 
-  <?php snippet('head'); ?>
-
   <?php if ($page->isHomePage()): ?>
   <title><?= $site->title() ?> - Accessibility first, Front-End Web Developer</title>
   <?php elseif ( $page->parents() == 'notes' || $page->parents() == 'checkins' ) : ?>
@@ -21,7 +19,13 @@
   <title><?= $page->title() ?> - <?= $site->title() ?></title>
   <?php endif ?>
 
-  <link href="<?= $site->url() ?>/assets/css/main.css?v20210724" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="robots" content="index,follow" />
+
+  <link href="<?= $site->url() ?>/assets/css/main.css?v20211023" rel="stylesheet">
+
+  <?php snippet('head'); ?>
 
   <?php  ?>
 

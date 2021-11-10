@@ -1,6 +1,3 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="robots" content="index,follow" />
 <link rel="pingback" href="https://webmention.io/calumryan.com/xmlrpc" />
 <link rel="webmention" href="https://webmention.io/calumryan.com/webmention" />
 <meta name="twitter:card" content="summary" />
