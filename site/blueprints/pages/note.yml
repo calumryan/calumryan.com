@@ -41,7 +41,7 @@ tabs:
             date:
               type: date
               time: true
-              default: now
+              default: today
             bridgy:
               type: checkboxes
               default: 

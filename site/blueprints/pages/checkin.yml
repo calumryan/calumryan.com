@@ -53,11 +53,10 @@ tabs:
             feature_images:
               label: Images
               type: files
-              uploads: false
-                parent: site
-                template: files-upload
+              multiple: true
+              uploads: true
               min: 0
-              max: 3
+              max: 8
               cover: true
             tags: true
   # meta information

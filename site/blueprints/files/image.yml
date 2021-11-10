@@ -26,7 +26,7 @@ columns:
             type: text
             required: true
           photographer:
-            label: Photogapher
+            label: Photographer
             type: text
             width: 2/3
           license:
