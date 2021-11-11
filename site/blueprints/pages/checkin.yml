@@ -53,6 +53,7 @@ tabs:
             feature_images:
               label: Images
               type: files
+              query: page.images
               multiple: true
               uploads: true
               min: 0
