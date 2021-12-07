@@ -33,7 +33,7 @@
     <div>
       <h2>My recent notes, bookmarks and other posts</h2>
       <?php 
-      $collection = pages(['notes', 'rsvps', 'bookmarks', 'replies', 'events', 'checkins', 'reposts', 'likes']);
+      $collection = page(['notes', 'rsvps', 'bookmarks', 'replies', 'events', 'checkins', 'reposts', 'likes']);
       if ($collection): ?>
       <ul class="notes h-feed">
         <?php foreach ($collection->children()->listed()->sortBy('date', 'desc')->paginate(6) as $post): ?>

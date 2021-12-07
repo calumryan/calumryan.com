@@ -10,7 +10,7 @@ class LikePage extends Page
      */
     public static function create(array $props)
     {
-      $collection = pages('likes')->children()->sortBy('uid', 'desc')->limit(1);
+      $collection = page('likes')->children()->sortBy('uid', 'desc')->limit(1);
 
       foreach ($collection as $post):
         $id = $post->uid();

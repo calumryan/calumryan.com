@@ -6,7 +6,7 @@
     </div>
     <?php 
     
-    $collection = pages('events')->children()->filterBy('tags', 'speaker', ',')->flip()->paginate(10);
+    $collection = page('events')->children()->filterBy('tags', 'speaker', ',')->flip()->paginate(10);
     if ($collection): ?>
     <div>
       <div class="notes">

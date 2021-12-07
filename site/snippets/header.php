@@ -22,12 +22,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta name="robots" content="index,follow" />
-
-  <link href="<?= $site->url() ?>/assets/css/main.css?v20211023" rel="stylesheet">
-
   <?php snippet('head'); ?>
-
-  <?php  ?>
+  <link href="<?= $site->url() ?>/assets/css/main.css?v20211023" rel="stylesheet">
 
 </head>
 <body class="book">

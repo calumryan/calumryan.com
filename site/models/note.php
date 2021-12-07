@@ -10,7 +10,7 @@ class NotePage extends Page
      */
     public static function create(array $props)
     {
-      $collection = pages('notes')->children()->sortBy('uid', 'desc')->limit(1);
+      $collection = page('notes')->children()->sortBy('uid', 'desc')->limit(1);
 
       foreach ($collection as $post):
         $id = $post->uid();

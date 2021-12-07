@@ -12,7 +12,7 @@ class RsvpPage extends Page {
      */
     public static function create(array $props)
     {
-      $collection = pages('rsvps')->children()->sortBy('uid', 'desc')->limit(1);
+      $collection = page('rsvps')->children()->sortBy('uid', 'desc')->limit(1);
 
       foreach ($collection as $post):
         $id = $post->uid();
