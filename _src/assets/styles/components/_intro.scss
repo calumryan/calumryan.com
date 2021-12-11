@@ -37,6 +37,7 @@
   flex: auto;
   width: auto;
   max-width: 115px;
+  position: relative;
 }
 
 .intro-anchor img {
@@ -44,6 +45,23 @@
   margin: auto;
   display: block;
   border: 3px solid #fff;
+  position: relative;
+}
+
+.intro-anchor span {
+  &::after {
+    position: absolute;
+    top: -8px;
+    left: 28px;
+    width: 150px;
+    margin-left: -50px;
+    transform: rotate(-10deg);
+    width: 157px;
+    height: 122px;
+    background-repeat: no-repeat;
+    background-image: url("../images/holy.svg");
+    content: "";
+  }
 }
 
 .intro figure img {
