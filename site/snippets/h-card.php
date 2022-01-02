@@ -1,6 +1,6 @@
 <?php snippet('profile') ?>
 <div>
-    <h1>Merry Christmas</h1>
+    <h1>Happy New Year</h1>
 <div>
 <?php 
 // $Hour = date('G');
