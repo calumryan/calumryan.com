@@ -60,6 +60,14 @@ tabs:
               max: 8
               cover: true
             tags: true
+            weather_icon:
+              label: Weather icon
+              type: text
+              message: "weather_icon"
+            temperature:
+              label: Temperature
+              type: text
+              message: "temperature"
   # meta information
   meta:
     label: Legacy content
@@ -85,11 +93,3 @@ tabs:
             longitude:
               label: Longitude
               type: text
-            weather_icon:
-              label: Weather icon
-              type: weather
-              message: "weather_icon"
-            temperature:
-              label: Temperature
-              type: weather
-              message: "temperature"
