@@ -111,7 +111,7 @@
                     <li class="h-event event-summary">
                         <time class="dt-start" datetime="2011-07-01">2011</time>
                         <h3>Culturebook</h3>
-                        <p><a class="p-organisation" rel="noreferrer noopener" target="_blank" href="http://portfolio.madeinbrunel.com/2011/calum-ryan/culturebook/">Made
+                        <p><a class="p-organisation" rel="noreferrer noopener" target="_blank" href="http://madeinbrunel.com">Made
                             in Brunel</a> &amp; New Designers
                         <br>Exhibited a cultural heritage platform for museums, art galleries and exhibitions developed
                         for my university Final Year Project.<br>
