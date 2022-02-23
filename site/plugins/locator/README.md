@@ -8,7 +8,7 @@ A simple map & geolocation field, built on top of open-source services and Mapbo
 
 ## Overview
 
-> This plugin is completely free and published under the MIT license. However, if you are using it in a commercial project and want to help me keep up with maintenance, please consider [making a donation of your choice](https://www.paypal.me/sylvainjule) or purchasing your license(s) through [my affiliate link](https://a.paddle.com/v2/click/1129/36369?link=1170).
+> This plugin is completely free and published under the MIT license. However, if you are using it in a commercial project and want to help me keep up with maintenance, please consider [making a donation of your choice](https://www.paypal.me/sylvainjl) or purchasing your license(s) through [my affiliate link](https://a.paddle.com/v2/click/1129/36369?link=1170).
 
 - [1. Installation](#1-installation)
 - [2. Setup](#2-setup)
@@ -39,6 +39,8 @@ Alternatively, you can install it with composer: ```composer require sylvainjule
 Out of the box, the field is set to use open-source services both for geocoding (Nominatim) and tiles-rendering (Positron), without any API-key requirements.
 
 Keep in mind that **these services are bound by strict usage policies**, always double-check if your usage is compatible. Otherwise, please set-up the field to use Mapbox, see details below.
+
+You can also directly enter latitude / longitude coordinates and bypass the geolocation (in a format such as: `15.23456, -30.67890`).
 
 ```yaml
 mymap:
@@ -206,7 +208,11 @@ mymap:
 
 #### 5.5. `display`
 
-The informations to be displayed in the panel. Note that it will only hide them from the panel view, they will still be stored (if available) in the .txt file. To be picked from `lat`, `lon`, `number`, `address`, `postcode`, `city` and `country`. Default includes them all.
+The informations to be displayed in the panel. Note that it will only hide them from the panel view, they will still be stored (if available) in the .txt file. To be picked from `lat`, `lon`, `number`, `address`, `postcode`, `city`, `region` and `country`. Default includes them all.
+
+If you are using Nominatim, the field also stores the OpenStreetMap ID under the `osm`  key, which you can also display by adding it to the list.
+
+If you don't want any information to show up, set it to `false`.
 
 ```yaml
 mymap:
@@ -218,6 +224,7 @@ mymap:
     - address
     - postcode
     - city
+    - region
     - country
 ```
 
@@ -257,12 +264,22 @@ mymap:
 
 #### 5.10. `language`
 
-If this options is set with an [ISO 639-1 code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) (en, fr, de, etc.), the geocoding service will return results in the requested language if available. Default is `false`.
+If this option is set with an [ISO 639-1 code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) (en, fr, de, etc.), the geocoding service will return results in the requested language if available. Default is `false`.
 
 ```yaml
 mymap:
   type: locator
   language: false # or 'de' | 'fr' | 'en' | …
+```
+
+#### 5.11. `dblclick`
+
+Whether a double click on the map should trigger a zoom (`zoom`) or add a marker / move the existing marker to the coordinates of the click event (`marker`). Default is `zoom`.
+
+```yaml
+mymap:
+  type: locator
+  dblclick: zoom # or 'marker'
 ```
 
 <br/>
@@ -286,6 +303,7 @@ return array(
     'sylvainjule.locator.liststyle'    => 'columns',
     'sylvainjule.locator.marker'       => 'dark',
     'sylvainjule.locator.language'     => false,
+    'sylvainjule.locator.dblclick'     => 'zoom',
 );
 ```
 
@@ -306,7 +324,9 @@ Potential stored keys are:
 - `number` (Street number)
 - `address` (Street / road / place)
 - `city` (city / village)
+- `region` (region / state)
 - `country` (country)
+- `osm` (OpenStreetMap ID, if using Nominatim)
 
 
 It is possible that the found location doesn't have one of those keys, which will therefore not be saved. It is important to always check if the key exists, and if it's not empty. Here's one way to do it:
