@@ -51,17 +51,22 @@
 .intro-anchor span {
   &::after {
     position: absolute;
-    top: -8px;
-    left: 28px;
-    width: 150px;
-    margin-left: -50px;
-    transform: rotate(-10deg);
-    width: 157px;
-    height: 122px;
+    bottom: -25px;
+    right: 0;
+    transform: rotate(15deg);
+    width: 50px;
+    height: 48px;
     background-repeat: no-repeat;
-    background-image: url("../images/holy.svg");
+    background-image: url("../images/ukr-flag.svg");
+    background-size: contain;
     content: "";
   }
+}
+
+.intro__sub {
+  font-size: 1rem;
+  margin-top: -1rem;
+  margin-bottom: 0.5rem;
 }
 
 .intro figure img {
