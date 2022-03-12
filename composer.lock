@@ -813,16 +813,16 @@
         },
         {
             "name": "sylvainjule/locator",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sylvainjule/kirby-locator.git",
-                "reference": "05b57528b9a280010c71c52e8a080150e63a8e0c"
+                "reference": "e1b721fd8df5d705542a110323bc4c72e8820dd4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sylvainjule/kirby-locator/zipball/05b57528b9a280010c71c52e8a080150e63a8e0c",
-                "reference": "05b57528b9a280010c71c52e8a080150e63a8e0c",
+                "url": "https://api.github.com/repos/sylvainjule/kirby-locator/zipball/e1b721fd8df5d705542a110323bc4c72e8820dd4",
+                "reference": "e1b721fd8df5d705542a110323bc4c72e8820dd4",
                 "shasum": ""
             },
             "require": {
@@ -845,9 +845,9 @@
             "description": "A map & geolocation field, built on top of open-source services / Mapbox",
             "support": {
                 "issues": "https://github.com/sylvainjule/kirby-locator/issues",
-                "source": "https://github.com/sylvainjule/kirby-locator/tree/1.1.1"
+                "source": "https://github.com/sylvainjule/kirby-locator/tree/1.1.2"
             },
-            "time": "2022-02-23T18:38:59+00:00"
+            "time": "2022-02-26T16:00:22+00:00"
         },
         {
             "name": "symfony/polyfill-intl-idn",
@@ -938,7 +938,7 @@
         },
         {
             "name": "symfony/polyfill-intl-normalizer",
-            "version": "v1.24.0",
+            "version": "v1.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-normalizer.git",
@@ -1002,7 +1002,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.24.0"
+                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.25.0"
             },
             "funding": [
                 {
