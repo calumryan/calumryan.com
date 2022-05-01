@@ -47,6 +47,11 @@ tabs:
               default: 
               options:
                 twitter: Twitter
+            mastodon:
+              type: checkboxes
+              default: 
+              options:
+                publish: Publish
             uid:
               type: text
             weather_icon:

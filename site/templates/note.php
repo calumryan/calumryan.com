@@ -11,7 +11,7 @@
         <?php snippet('mentions', ['page' => $page]) ?>
         <?php snippet('link-archive',['post' => $page]) ?>
         <?php snippet('post-meta',['post' => $page]) ?>
-        <?php if ( $page->bridgy()->isNotEmpty() ) : ?><a class="u-bridgy-omit-link" href="https://brid.gy/publish/twitter" hidden></a><?php endif ?>
+        <?php if ( $page->bridgy()->isNotEmpty() ) : ?><a class="u-bridgy-omit-link" href="https://brid.gy/publish/twitter" hidden></a><?php endif ?><?php if ( $page->mastodon()->isNotEmpty() ) : ?><a class="u-bridgy-omit-link" href="https://brid.gy/publish/mastodon" hidden></a><?php endif ?>
     </article>
 </main>
 
