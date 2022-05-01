@@ -19,7 +19,7 @@
   <h1><?= $page->title() ?></h1>
   <?php endif ?>
   <?php if ( $page->svg()->isNotEmpty() ) :?>
-  <svg class="icon" aria-hidden="true" width="150" height="150"><use xmlnsXlink="http://www.w3.org/1999/xlink" xlink:href="<?= $site->url() ?>/assets/icons/icons.sprite.svg#<?= $page->svg() ?>"></use></svg>
+  <svg class="icon" aria-hidden="true" focusable="false" width="150" height="150"><use xmlnsXlink="http://www.w3.org/1999/xlink" xlink:href="<?= $site->url() ?>/assets/icons/icons.sprite.svg#<?= $page->svg() ?>"></use></svg>
   <?php endif ?>
   <?php if ( $page->date()->isNotEmpty() && $page->parents() != 'notes' && $page->parents() != 'events' && $page->parents() != 'checkins' && $page->parents() != 'rsvps' && $page->parents() != 'replies' && $page->parents() != 'likes' && $page->parents() != 'reposts' ) :?>
   <time class="note-date"><?= $page->date()->toDate('j F Y') ?></time>

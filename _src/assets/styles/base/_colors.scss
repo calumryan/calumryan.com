@@ -28,6 +28,7 @@
   --post-speaking: rgb(8, 115, 61);
   --post-reposts: rgb(2, 73, 160);
   --post-bookshelf: rgb(58, 29, 35);
+  --post-gallery: rgb(50, 64, 86);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -60,6 +61,10 @@
 
 .bg-bookmarks {
   background-color: var(--post-bookmarks);
+}
+
+.bg-gallery {
+  background-color: var(--post-gallery);
 }
 
 .bg-articles {

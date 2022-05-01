@@ -10,6 +10,10 @@
   background-color: #1b1b1c;
 }
 
+.book__side__gallery {
+  background-color: var(--post-gallery);
+}
+
 .book__side__bookmarks {
   background-color: var(--post-bookmarks);
 }
