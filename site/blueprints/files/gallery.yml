@@ -1,0 +1,9 @@
+title: Gallery
+
+sections:
+  files:
+    headline: Gallery
+    type: files
+    layout: cards
+    size: medium
+    template: gallery-image

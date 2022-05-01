@@ -129,6 +129,17 @@
       outline-offset: -6px;
     }
   }
+  &.notes {
+    grid-gap: var(--spacing-1);
+    a {
+      margin-top: 0;
+      margin-bottom: 0;
+      img {
+        width: 100%;
+        max-width: 500px;
+      }
+    }
+  }
 }
 
 [aria-label="gallery controls"] li {
