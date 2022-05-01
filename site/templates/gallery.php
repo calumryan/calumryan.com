@@ -8,7 +8,7 @@
     <div>
         <ul class="notes gallery">
         <?php foreach ($collection as $image): ?> 
-            <li><a href="<?= $image->url() ?>" class="note-image p-image">
+            <li><a href="<?= $image->parent() ?>" class="note-image p-image">
                 <img loading="lazy" class="u-photo" src="<?= $image->crop(400,200)->url() ?>" alt="<?= $image->alt() ?>">
             </a></li>
         <?php endforeach ?>
