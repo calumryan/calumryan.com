@@ -4,6 +4,7 @@
     <div>
       <h2 class="heading-small"><a class="p-name name" href="<?= $post->url() ?>"
         ><?= $post->title() ?></a></h2>
+      <?php if ( $post->description()->isNotEmpty() ) : ?><p class="p-summary"><?= $post->description(); ?></p><?php endif; ?>
     </div>
     <?php if ( $image = $post->og_thumbnail()->toFile() ) : ?>
     <img src="<?= $image->resize(150)->url() ?>" alt="" aria-hidden="true" loading="lazy">
