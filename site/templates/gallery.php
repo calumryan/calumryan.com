@@ -2,7 +2,7 @@
 
 <main id="content" class="page">
     <?php 
-    $group = page(['notes','checkins']);
+    $group = pages(['notes','checkins']);
     $collection = $group->children()->listed()->sortBy('date', 'uid', 'desc')->flip()->files()->filterBy('type', 'image')->paginate(10);
     if ($collection): ?>
     <div>
