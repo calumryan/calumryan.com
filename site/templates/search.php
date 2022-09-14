@@ -2,7 +2,7 @@
 <main id="content" class="page page__center page__column page__short">
 
   <div>
-    <?php $limit = 10; ?>
+    <?php $limit = 20; ?>
     <?php snippet('form-search') ?>
     <?php if ( $results->listed()->count() ) : ?>
     <ol class="notes h-feed">
