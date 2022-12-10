@@ -19,24 +19,40 @@
     <?php if ( $articles = page('articles')->children()->sortBy('date', 'desc')->limit(1) ) : ?>
     <article class="band">
       <div class="band-content bg-articles">
+
+      <?php foreach ($articles as $article): ?>
+        <?php if ( $image = $article->og_thumbnail()->toFile() ) : ?>
+        <img src="<?= $image->resize(150)->url() ?>" alt="" aria-hidden="true" loading="lazy">
+        <?php elseif ( $article->thumbnail()->isNotEmpty() ) : ?>
+        <img src="<?= $article->thumbnail() ?>" alt="" aria-hidden="true" loading="lazy">
+        <?php else: ?>
         <svg class="icon" aria-hidden="true" width="80" height="80"><use xmlnsXlink="http://www.w3.org/1999/xlink" xlink:href="<?= $site->url() ?>/assets/icons/icons.sprite.svg#icon-post"></use></svg>
+        <?php endif ?>
+        
         <header>
-          <?php foreach ($articles as $article): ?>
+          
           <h2 class="heading-medium"><a class="p-name name link" href="<?= $article->url() ?>"><?= $article->title() ?></a></h2>
           <?php if ( $article->description()->isNotEmpty() ) : ?><p class="p-summary text"><?= $article->description(); ?></p><?php endif; ?>
-          <?php endforeach ?>
+          
         </header>
+        <?php endforeach ?>
       </div>
     </article>
     <?php endif ?>
 
     <div>
-      <h2>My recent notes, bookmarks and other posts</h2>
+      <?php snippet('aside-more') ?>
+    </div>
+
+    <br>
+
+    <div>
+      <h2>Recently</h2>
       <?php 
-      $collection = pages(['notes','rsvps','bookmarks','replies','events','checkins','reposts','likes']);
+      $collection = pages(['notes']);
       if ($collection): ?>
       <ul class="notes h-feed">
-        <?php foreach ($collection->children()->listed()->sortBy('date', 'desc')->paginate(6) as $post): ?>
+        <?php foreach ($collection->children()->listed()->sortBy('date', 'desc')->paginate(4) as $post): ?>
           <?php $content_type = $post->parent(); ?>
           <li class="h-entry<?= ' h-entry__'.$content_type ?>">
             <?php 
@@ -48,7 +64,6 @@
           <?php endforeach ?>
       </ul>
       <?php endif ?>
-      <?php snippet('aside-more') ?>
     </div>
 
   </div>

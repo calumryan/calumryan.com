@@ -3,7 +3,7 @@
 .band-content {
   color: #fff;
   border-radius: 0.3rem;
-  padding: var(--spacing-5);
+  padding: var(--spacing-2);
   margin-bottom: var(--spacing-7);
   display: flex;
   align-items: center;
@@ -15,8 +15,12 @@
     max-width: 100%;
   }
 }
-.band-content svg {
-  margin-right: var(--spacing-4);
+.band-content svg,
+.band-content img {
+  margin-right: var(--spacing-3);
+}
+.band-content img {
+  border-radius: 0.3rem;
 }
 .band-artwork {
   max-width: var(--content-width);

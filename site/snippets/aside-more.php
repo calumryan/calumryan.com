@@ -1,5 +1,5 @@
 <nav aria-label="Everything" class="nav-horizontal">
-    <h2 class="heading">View more content on calumryan.com</h2>
+    <h2 class="heading">Site menu</h2>
     <?php if ($site_menu = page('site-menu')): ?>
       <ul>
         <?php foreach ($site_menu->links()->toStructure() as $item): ?>
