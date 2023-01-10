@@ -6,8 +6,7 @@
       <div class="note-link">
         <svg aria-hidden="true" class="icon" role="img" width="50" height="50"><use xmlnsXlink="http://www.w3.org/1999/xlink" xlink:href="<?= $site->url() ?>/assets/icons/icons.sprite.svg#icon-bookmark"></use></svg>
         <div>
-        <a class="p-name u-bookmark-of" href="<?= $page->permalink() ?>"><?= $page->title() ?></a>
-        <a href="<?= $page->permalink() ?>" hidden><?= $page->permalink() ?></a>
+        <a class="p-name u-bookmark-of" href="<?= $page->blink() ?>"><?= $page->title() ?></a>
         </div>
       </div>
       <?php snippet('link-archive',['post' => $page]) ?>
