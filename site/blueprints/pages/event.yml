@@ -60,6 +60,9 @@ columns:
           longitude:
             label: Longitude
             type: text
+          location:
+            label: Location
+            type: text
           city:
             type: text
           timezone:
