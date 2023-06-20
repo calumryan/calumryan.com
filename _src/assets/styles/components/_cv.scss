@@ -58,6 +58,14 @@ ul.cv-list {
     left: 0;
     margin-left: -3px;
   }
+
+  .p-type {
+    background-color: rgb(40, 84, 154);
+    color: #fff;
+    padding: var(--spacing-1);
+    margin: 0 0 var(--spacing-1) 0;
+    display: inline-block;
+  }
 }
 
 .experience-list__icon {

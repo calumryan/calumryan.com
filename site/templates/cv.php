@@ -17,6 +17,7 @@
                 <div class="p-experience h-event vevent experience vevent" itemprop="worksFor" itemtype="https://schema.org/Organization https://schema.org/Role">
 
                     <header class="h-card vcard">
+                    <strong class="p-type"><?php if ( $role->type()->isNotEmpty() ) : echo $role->type(); endif ?></strong>
                     <h3 class="p-experience heading-medium"><span class="p-job-title" itemprop="roleName"><?= $role->role_name() ?></span><br><a
                         class="p-name org u-url url" itemprop="name" rel="noreferrer noopener" target="_blank"
                         href="<?= $role->org_url() ?>"><?= $role->org() ?></a></h3>
@@ -28,8 +29,7 @@
                     <time class="dt-start" datetime="<?= $role->start_date() ?>" itemprop="startDate"><?=
                     $role->start_date()->toDate('F Y') ?></time> - <time class="dt-end" datetime="<?= date('y-m-d') ?>"
                     itemprop="endDate">Present</time>
-                    <?php endif; ?> | 
-                    <strong><?php if ( $role->type()->isNotEmpty() ) : echo $role->type(); endif ?></strong>
+                    <?php endif; ?>  
 
                     </header>
 
