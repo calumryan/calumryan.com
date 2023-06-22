@@ -12,7 +12,7 @@
 <head>
 
   <?php if ($page->isHomePage()): ?>
-  <title><?= $site->title() ?> - Accessibility first, Front-End Web Developer</title>
+  <title><?= $site->title() ?> - Web Accessibility Specialist</title>
   <?php elseif ( $page->parents() == 'notes' || $page->parents() == 'checkins' ) : ?>
   <title><?= $page->title() ?> at <?= $page->date()->toDate('H:i T') ?> - <?= $site->title() ?></title>
   <?php else : ?>
