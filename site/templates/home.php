@@ -66,8 +66,10 @@
       <?php endif ?>
     </div>
 
+    <?php snippet('webrings') ?>
+
   </div>
-  
+
 </main>
 
 <?php snippet('footer') ?>

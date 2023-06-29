@@ -1,0 +1,32 @@
+.webring {
+  margin: 0 0 var(--spacing-2) 0;
+}
+
+.webring-section {
+  background-color: var(--brand-color-primary);
+  font-family: var(--text-font-primary);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.09);
+  border-radius: 0.3rem;
+  padding: var(--spacing-2);
+  margin-bottom: var(--spacing-7);
+  color: #fff;
+}
+
+.c-webring {
+  display: flex;
+  li {
+    list-style-type: none;
+
+    &:first-child {
+      padding-right: var(--spacing-2);
+    }
+
+    &:last-child {
+      padding-left: var(--spacing-2);
+    }
+  }
+}
+
+.c-webring__homepage {
+  font-weight: 600;
+}

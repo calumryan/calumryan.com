@@ -29,14 +29,16 @@ a.link-long,
 
 .link,
 .e-content a,
-.experience-list a {
+.experience-list a,
+.webring-link {
   text-decoration: underline;
 }
 
 .link:hover,
 .e-content a:hover,
 .experience-list a:hover,
-.text a:hover {
+.text a:hover,
+.webring-link:hover {
   text-decoration: none;
 }
 
@@ -44,6 +46,7 @@ a.link-long,
 .text a:focus,
 .note a:focus,
 .intro a:focus,
+.webring-link:focus,
 .header__link:focus,
 .logo:focus,
 .text-menu ul li a:focus,

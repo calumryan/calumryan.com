@@ -13,9 +13,7 @@
   <footer class="footer">
     <div class="footer__container container">
       <a href="#header" class="link footer__skip"><svg aria-hidden="true" role="img" width="12" height="12"><use xmlnsXlink="http://www.w3.org/1999/xlink" xlink:href="<?= $site->url() ?>/assets/icons/icons.sprite.svg#icon-arrow-up"></use></svg> Back to top of page</a>
-      <small>Content and code is under a <a class="link" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> license</small>
-
-      <?php snippet('indiewebring') ?>
+      <small>Content and code is under a <a class="link" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> license</small><br>
 
       <?php if ($about = page('about')): ?>
       <nav class="social" aria-label="Follow">
