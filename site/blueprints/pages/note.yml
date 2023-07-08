@@ -42,11 +42,6 @@ tabs:
               type: date
               time: true
               default: today
-            bridgy:
-              type: checkboxes
-              default: 
-              options:
-                twitter: Twitter
             mastodon:
               type: checkboxes
               default: 
