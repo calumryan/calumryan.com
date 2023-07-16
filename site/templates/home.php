@@ -22,7 +22,7 @@
 
       <?php foreach ($articles as $article): ?>
         <?php if ( $image = $article->og_thumbnail()->toFile() ) : ?>
-        <img src="<?= $image->resize(150)->url() ?>" alt="" aria-hidden="true" loading="lazy">
+        <img src="<?= $image->resize(150,150,100)->url() ?>" alt="" aria-hidden="true" loading="lazy">
         <?php elseif ( $article->thumbnail()->isNotEmpty() ) : ?>
         <img src="<?= $article->thumbnail() ?>" alt="" aria-hidden="true" loading="lazy">
         <?php else: ?>

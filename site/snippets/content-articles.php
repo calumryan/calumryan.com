@@ -7,7 +7,7 @@
       <?php if ( $post->description()->isNotEmpty() ) : ?><p class="p-summary"><?= $post->description(); ?></p><?php endif; ?>
     </div>
     <?php if ( $image = $post->og_thumbnail()->toFile() ) : ?>
-    <img src="<?= $image->resize(150)->url() ?>" alt="" aria-hidden="true" loading="lazy">
+    <img src="<?= $image->resize(150,150,100)->url() ?>" alt="" aria-hidden="true" loading="lazy">
     <?php elseif ( $post->thumbnail()->isNotEmpty() ) : ?>
     <img src="<?= $post->thumbnail() ?>" alt="" aria-hidden="true" loading="lazy">
     <?php endif ?>
