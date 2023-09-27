@@ -7,6 +7,7 @@ function initMap() {
 
   const map = L.map("mapcontainer", {
     minZoom: 5,
+    maxZoom: 10,
     scrollWheelZoom: false,
   }).setView([51.505, -0.09], initialZoom);
 
@@ -14,9 +15,9 @@ function initMap() {
   const mapData = mapdataScript ? JSON.parse(mapdataScript.textContent) : {};
 
   const tileSrc =
-    "https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.png";
+    "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
   const tileAttribution =
-    '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>, <a href="https://maps.stamen.com/">Stamen</a>';
+    '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>';
 
   const markerIcon = L.icon({
     ...L.Icon.Default.prototype.options,
