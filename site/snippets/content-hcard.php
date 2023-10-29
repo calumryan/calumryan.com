@@ -1,0 +1,1 @@
+<div hidden class="p-author h-card"><a href="/" class="u-url author-icon" rel="author" title="Calum Ryan"><img class="u-photo p-name" src="<?= $site->url() ?>/assets/images/icon.png" alt="Calum Ryan"></a></div>

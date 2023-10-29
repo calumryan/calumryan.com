@@ -1,6 +1,6 @@
 <?php snippet('meta') ?>
-<link rel="me" href="https://github.com/calumryan">
-<link rel="me" href="https://twitter.com/calum_ryan">
+<link rel="self" href="https://calumryan.com/">
+<link rel="me" href="https://fed.brid.gy/r/https://calumryan.com/">
 <link rel="me" href="https://micro.blog/calumryan" />
 <link rel="me" href="mailto:hello@calumryan.com" />
 

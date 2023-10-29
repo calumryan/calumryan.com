@@ -47,6 +47,12 @@ tabs:
               default: 
               options:
                 publish: Publish
+            mastodon_fed:
+              type: checkboxes
+              label: Mastodon Fediverse
+              default: 
+              options:
+                publish: Publish
             uid:
               type: text
             weather_icon:
