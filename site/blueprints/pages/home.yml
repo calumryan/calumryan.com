@@ -22,3 +22,8 @@ columns:
         label: Description
         type: textarea
         size: small
+      banner:
+        label: Banner image
+        type: files
+        query: page.images
+        multiple: false

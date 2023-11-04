@@ -1,0 +1,28 @@
+.banner {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+}
+
+.banner, 
+.banner img {
+    border-radius: 0.3rem;
+}
+
+.banner img {
+    flex-grow: 0;
+    margin: auto;
+    object-fit: contain;
+}
+
+.banner__caption {
+    text-align: right;
+    padding: var(--spacing-1) var(--spacing-2);
+    background-color: var(--brand-color-primary);
+    border-radius: 0 0.3rem;
+    color: #fff;
+    display: inline-flex;
+    bottom: 2.6rem;
+    margin-bottom: -2.6rem;
+    position: relative;
+}

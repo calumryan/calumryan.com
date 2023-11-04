@@ -21,6 +21,8 @@
 }
 .band-content img {
   border-radius: 0.3rem;
+  height: auto;
+  display: block;
 }
 .band-artwork {
   max-width: var(--content-width);

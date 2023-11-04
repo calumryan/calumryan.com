@@ -40,6 +40,14 @@
     </article>
     <?php endif ?>
 
+    <?php if ( $page->banner()->isNotEmpty() ) : ?>
+    <div class="banner">
+      <?php $image = $page->banner()->toFile(); ?>
+      <img class="u-featured" src="<?= $image->resize(1200)->url() ?>" alt="<?= $image->alt() ?>" width="1200" height="400">
+      <div aria-hidden="true" class="banner__caption"><?= $image->alt() ?></div>
+    </div>
+    <?php endif ?>
+
     <div>
       <?php snippet('aside-more') ?>
     </div>
