@@ -1,8 +1,9 @@
 <?php snippet('meta') ?>
 <link rel="self" href="https://calumryan.com/">
-<link rel="me" href="https://fed.brid.gy/r/https://calumryan.com/">
+<link rel="me" href="https://toot.cafe/@calumryan">
 <link rel="me" href="https://micro.blog/calumryan" />
 <link rel="me" href="mailto:hello@calumryan.com" />
+<link rel="me" href="https://fed.brid.gy/r/https://calumryan.com/">
 
 <?php // selfauthEndpoint() ?>
 <?php if (strpos($_SERVER['HTTP_HOST'], 'calumryan.com') !== false) : micropublisherEndpoints(); endif; ?>

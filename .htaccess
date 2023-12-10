@@ -20,11 +20,10 @@
 <IfModule mod_rewrite.c>
 
 RewriteEngine on
+RewriteBase /
 RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.calumryan.com/$1 [R,L]
 RewriteRule ^.well-known/(host-meta|webfinger).* https://fed.brid.gy/$0  [redirect=302,last]
-
-RewriteBase /
 
 # block files and folders beginning with a dot, such as .git
 # except for the .well-known folder, which is used for Let's Encrypt and security.txt
