@@ -6,7 +6,7 @@ type: pages
 headline: CVs 💼
 parent: kirby.page("cvs")
 # info: "{{ page.date.toDate('d.m.Y') }}"
-template: cv
+template: cv-custom
 empty: No CVs yet
 sortBy: date desc
 limit: 8

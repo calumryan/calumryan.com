@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /panel
+Disallow: /cvs
 Disallow: /micropub
 Disallow: /helpfuldigital-exercise
