@@ -8,6 +8,7 @@ columns:
       checkins: sections/checkins
       events: sections/events
       bookshelf: sections/bookshelf
+      cvs: sections/cvs
       # albums: sections/albums
 
   - width: 1/3
@@ -16,7 +17,6 @@ columns:
       rsvps: sections/rsvps
       replies: sections/replies
       likes: sections/likes
-      reposts: sections/reposts
       reposts: sections/reposts
 
   - width: 1/3

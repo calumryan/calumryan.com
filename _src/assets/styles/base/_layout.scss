@@ -14,6 +14,12 @@
   }
 }
 
+@media print {
+  .page {
+    padding: 0;
+  }
+}
+
 .page > * {
   margin: auto;
 }
