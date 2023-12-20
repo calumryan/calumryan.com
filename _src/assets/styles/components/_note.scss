@@ -48,14 +48,14 @@
 .note-structure {
   margin: 0 auto;
 
-  @media print {
-    width: auto;
-    max-width: 100%;
-  }
-
   @media (min-width: 40em) {
     width: var(--content-width-fluid);
     max-width: var(--content-width-text);
+  }
+
+  @media print {
+    width: 100%;
+    max-width: 100%;
   }
 }
 

@@ -39,9 +39,16 @@
 
 .text-article > p,
 .text-article > ul > li,
-.text-article > ol > li {
+.text-article > ol > li,
+.text-article > dl > dt,
+.text-article > dl > dd
+ {
   font-size: 1.2rem;
   line-height: 2rem;
+}
+
+.text-article > dl > dd {
+  padding-bottom: var(--spacing-4);
 }
 
 .text-article > hr {
@@ -71,6 +78,21 @@
   margin-top: 3rem;
   margin-bottom: 1.5rem;
   text-align: center;
+}
+
+.text-cv > h2:not(.heading) {
+  text-align: left;
+}
+
+.text-cv > h1 {
+  font-size: 2.5rem;
+  font-family: var(--text-font-primary);
+  line-height: 1.8;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  @media print {
+    font-size: 1.5rem;
+  }
 }
 
 .text > *:first-child {
@@ -118,6 +140,10 @@
 
 .text img {
   width: 100%;
+}
+
+.text dt {
+  font-weight: 600;
 }
 
 .text pre {
@@ -170,4 +196,16 @@
 .section-break {
   border-top: 0.1rem solid #ccc;
   padding: var(--spacing-3) 0;
+}
+
+.dl-box {
+  border: 0.1rem solid var(--text-color);
+  border-radius: 0.5rem;
+  padding: var(--spacing-4);
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.dl-box dd:last-of-type {
+  padding-bottom: 0;
 }
