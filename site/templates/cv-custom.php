@@ -19,7 +19,7 @@
         <article class="text text-article text-cv note-structure h-entry">
 
           <h1>Calum Ryan</h1>
-          <?php if ( $page->description()->isNotEmpty() ) : ?><p class="text-medium"><strong><?= $page->description(); ?></strong></p><?php endif; ?>
+          <?php if ( $page->description()->isNotEmpty() ) : ?><p class="text-medium"><strong><?= $page->description()->kt(); ?></strong></p><?php endif; ?>
 
           <h2>About me</h2>
           <?= $page->text()->kt() ?>
@@ -31,6 +31,18 @@
 
           <hr />
 
+          <h2>Qualifications</h2>
+          <?= $page->education()->kt() ?>
+
+          <hr />
+
+          <?php if ( $page->interests()->isNotEmpty() ) : ?>
+          <h2>Interests</h2>
+          <?= $page->interests()->kt() ?>
+
+          <hr />
+          <?php endif; ?>
+
           <h2>Contact me</h2>
 
           <dl>
@@ -41,7 +53,7 @@
             <dd><?= $page->telephone() ?></dd>
 
             <dt>Email</dt>
-            <dd><a href="mailto:hello@calumryan.com">hello@calumryan.com</a></dd>
+            <dd><a href="mailto:<?= $page->email() ?>"><?= $page->email() ?></a></dd>
 
             <dt>Mastodon</dt>
             <dd><a href="https://toot.cafe/@calumryan">@calumryan@toot.cafe</a></dd>

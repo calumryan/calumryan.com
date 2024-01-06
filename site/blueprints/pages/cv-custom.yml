@@ -40,7 +40,15 @@ columns:
         label: Experience
         type: textarea
         size: large
+      education:
+        type: textarea
+        size: medium
+      interests:
+        type: textarea
+        size: medium
       telephone:
         type: text
       address:
+        type: text
+      email:
         type: text
