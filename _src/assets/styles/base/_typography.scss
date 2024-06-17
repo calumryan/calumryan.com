@@ -51,6 +51,11 @@
   padding-bottom: var(--spacing-4);
 }
 
+.text-article > ul > li,
+.text-article > ol > li {
+  margin-bottom: var(--spacing-2);
+}
+
 .text-article > hr {
   border-color: var(--text-color);
   margin-bottom: var(--spacing-4);

@@ -10,8 +10,8 @@
 <meta name="twitter:title" content="<?= $page->title() ?> at <?= $page->date()->toDate('H:i T') ?>" />
 <meta name="og:title" content="<?= $page->title() ?> at <?= $page->date()->toDate('H:i T') ?>" />
 <?php elseif ($page->isHomePage()): ?>
-<meta name="twitter:title" content="Calum Ryan - Accessibility first, Front-End Web Developer" />
-<meta name="og:title" content="Calum Ryan - Accessibility first, Front-End Web Developer" />
+<meta name="twitter:title" content="Calum Ryan - Accessibility Specialist" />
+<meta name="og:title" content="Calum Ryan - Accessibility Specialist" />
 <?php else : ?>
 <meta name="twitter:title" content="<?= $page->title() ?>" />
 <meta name="og:title" content="<?= $page->title() ?>" />
