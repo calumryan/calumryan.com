@@ -13,6 +13,7 @@
         <?php snippet('link-archive',['post' => $page]) ?>
         <?php snippet('post-meta',['post' => $page]) ?>
         <?php if ( $page->mastodon()->isNotEmpty() ) : ?><a class="u-bridgy-omit-link" href="https://brid.gy/publish/mastodon" hidden></a><?php endif ?>
+        <?php if ( $page->bluesky()->isNotEmpty() ) : ?><a class="u-bridgy-omit-link" href="https://brid.gy/publish/bluesky" hidden></a><?php endif ?>
         <?php if ( $page->mastodon_fed()->isNotEmpty() ) : ?><a class="u-bridgy-fed" href="https://fed.brid.gy/" hidden></a><?php endif ?>
     </article>
 </main>

@@ -42,6 +42,11 @@ tabs:
               type: date
               time: true
               default: today
+            bluesky:
+              type: checkboxes
+              default: 
+              options:
+                publish: Publish
             mastodon:
               type: checkboxes
               default: 
