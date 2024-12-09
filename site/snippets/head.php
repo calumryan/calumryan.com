@@ -10,9 +10,9 @@
 <?php if (strpos($_SERVER['HTTP_HOST'], 'calumryan.com') !== false) : micropublisherEndpoints(); endif; ?>
 <link rel="microsub" href="https://aperture.p3k.io/microsub/151">
 
-<link rel="alternate" type="application/json" title="Latest notes" href="<?= site()->url() ?>/feeds/notes/rss"/>
-<link rel="alternate" type="application/json" title="Latest articles" href="<?= site()->url() ?>/feeds/articles/rss"/>
-<link rel="alternate" type="application/json" title="Latest bookmarks" href="<?= site()->url() ?>/feeds/bookmarks/rss"/>
+<link rel="alternate" type="application/rss+xml" title="Latest notes" href="<?= site()->url() ?>/feeds/notes/rss"/>
+<link rel="alternate" type="application/rss+xml" title="Latest articles" href="<?= site()->url() ?>/feeds/articles/rss"/>
+<link rel="alternate" type="application/rss+xml" title="Latest bookmarks" href="<?= site()->url() ?>/feeds/bookmarks/rss"/>
 
 <!-- Hey thanks for checking out the source code, this is where the magic happens! -->
 <!-- If you'd like to suggest anything to improve or need assistance then get in touch -->
