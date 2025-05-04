@@ -24,7 +24,7 @@
         <?php if ( $image = $article->og_thumbnail()->toFile() ) : ?>
         <img src="<?= $image->resize(150,150,100)->url() ?>" alt="<?= $image->alt(); ?>" loading="lazy" width="150" height="150">
         <?php elseif ( $article->thumbnail()->isNotEmpty() ) : ?>
-        <img src="<?= $article->thumbnail() ?>" alt="<?= $article->thumbnail()->alt(); ?>" aria-hidden="true" loading="lazy" width="150" height="150">
+        <img src="<?= $article->thumbnail() ?>" alt="<?= $article->thumbnail()->alt(); ?>" loading="lazy" width="150" height="150">
         <?php else: ?>
         <svg class="icon" aria-hidden="true" width="80" height="80"><use xmlnsXlink="http://www.w3.org/1999/xlink" xlink:href="<?= $site->url() ?>/assets/icons/icons.sprite.svg#icon-post"></use></svg>
         <?php endif ?>
@@ -42,11 +42,11 @@
     <?php endif ?>
 
     <?php if ( $page->banner()->isNotEmpty() ) : ?>
-    <div class="banner">
+    <figure class="banner">
       <?php $image = $page->banner()->toFile(); ?>
-      <img class="u-featured" src="<?= $image->resize(1200)->url() ?>" alt="<?= $image->alt() ?>" width="1200" height="400">
-      <div aria-hidden="true" class="banner__caption"><?= $image->alt() ?></div>
-    </div>
+      <img class="u-featured" src="<?= $image->resize(1200)->url() ?>" alt="" width="1200" height="400">
+      <figcaption class="banner__caption"><?= $image->alt() ?></figcaption>
+    </figure>
     <?php endif ?>
 
     <div>
