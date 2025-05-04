@@ -18,7 +18,7 @@
       <?php if ($about = page('about')): ?>
       <nav class="social" aria-label="Follow">
         <?php foreach ($about->social()->toStructure() as $social): ?>
-        <a class="link" href="<?= $social->url() ?>"><span class="sr-only"><?= $social->platform() ?></span><svg aria-hidden="true" focusable="false" class="icon" width="40" height="40"><title></title><use xmlnsXlink="http://www.w3.org/1999/xlink" xlink:href="<?= $site->url() ?>/assets/icons/icons.sprite.svg#icon-<?= $social->icon() ?>"></use></svg></a>
+        <a class="link" href="<?= $social->url() ?>"><span class="sr-only">Calum's profile on <?= $social->platform() ?></span><svg aria-hidden="true" focusable="false" class="icon" width="40" height="40"><title></title><use xmlnsXlink="http://www.w3.org/1999/xlink" xlink:href="<?= $site->url() ?>/assets/icons/icons.sprite.svg#icon-<?= $social->icon() ?>"></use></svg></a>
         <?php endforeach ?>
         <a class="link" href="<?= $site->url() ?>/rss" aria-label="RSS feeds"><svg class="icon" width="40" height="40"><title></title><use xmlnsXlink="http://www.w3.org/1999/xlink" xlink:href="<?= $site->url() ?>/assets/icons/icons.sprite.svg#icon-rss"></use></svg></a>
       </nav>
