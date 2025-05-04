@@ -39,9 +39,9 @@
       <div class="header__container container">
 
         <div class="header__strip">
-          <h2 class="site-title">
+          <div class="site-title">
             <a class="logo p-name u-url" href="<?= $site->url() ?>" rel="home"><?php snippet('petals-outline') ?>Calum Ryan<span class="sr-only"> homepage</span></a>
-          </h2>
+          </div>
 
           <div class="header__menu">
             <a class="header__link" href="<?= $site->url() ?>/site-menu">Site menu</a>
