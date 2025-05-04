@@ -33,6 +33,7 @@
           
           <h2 class="heading-medium"><a class="p-name name link" href="<?= $article->url() ?>"><?= $article->title() ?></a></h2>
           <?php if ( $article->description()->isNotEmpty() ) : ?><p class="p-summary text"><?= $article->description(); ?></p><?php endif; ?>
+          <p class="text"><time class="note-date"><?= $article->date()->toDate('j F Y') ?></time></p>
           
         </header>
         <?php endforeach ?>

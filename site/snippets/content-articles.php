@@ -12,12 +12,5 @@
     <img src="<?= $post->thumbnail() ?>" alt="" aria-hidden="true" loading="lazy">
     <?php endif ?>
   </header>
-  <footer class="post-meta">
-  <a href="<?= $post->url() ?>" class="u-url">
-    <time
-      datetime="<?= $post->date()->toDate('Y-m-d\TH:i:s') ?>"
-      class="dt-published"
-      ><?= $post->date()->toDate('j F Y') ?></time
-    ></a>
-  </footer>
+  <?php snippet('content-footer',['post' => $post]) ?>
 </article>

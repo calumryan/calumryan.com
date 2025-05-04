@@ -24,7 +24,7 @@
   <?php if ( $page->date()->isNotEmpty() && $page->parents() != 'notes' && $page->parents() != 'events' && $page->parents() != 'checkins' && $page->parents() != 'rsvps' && $page->parents() != 'replies' && $page->parents() != 'likes' && $page->parents() != 'reposts' ) :?>
   <time class="note-date"><?= $page->date()->toDate('j F Y') ?></time>
   <?php endif ?>
-  <?php if ( $page->parents() == 'notes' || $page->parents() == 'checkins' || $page->parents() == 'replies') :?>
+  <?php if ( $page->parents() == 'articles' || $page->parents() == 'notes' || $page->parents() == 'checkins' || $page->parents() == 'replies') :?>
   <time class="note-date"><?= $page->date()->toDate('H:i T') ?></time>
   <?php endif ?>
   <?php if ( $page->parents() == 'notes' || $page->parents() == 'checkins') :?>

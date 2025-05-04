@@ -10,5 +10,5 @@
       <?= $post->date()->toDate('H:i T') ?></time
     ></a
   >
-  <div hidden class="h-card p-author"><a class="p-name u-url" rel="author" href="https://calumryan.com/">Calum Ryan</a><img class="u-photo" src="<?= $site->url() ?>/assets/images/icon.png?v20200704" alt=""></div>
+  <div hidden class="h-card p-author"><a class="p-name u-url" rel="author" href="https://calumryan.com/">Calum Ryan</a><img class="u-photo" src="<?= $site->url() ?>/assets/images/icon.png?v20250404" alt=""></div>
 </footer>
