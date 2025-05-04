@@ -1,7 +1,7 @@
 
 <?php snippet('header') ?>
 
-<main id="content" class="page">
+<div class="book__main"><main id="content" class="page ">
 
   <article class="note h-entry">
 

@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-<main id="content" class="page page__center">
+<div class="book__main"><main id="content" class="page  page__center">
   <div class="note-text note-book"> 
   <?php if ( $page->feature_images()->isNotEmpty() ) : ?>
     <picture class="note-picture">

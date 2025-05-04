@@ -11,7 +11,7 @@
 ?>
 <?php snippet('header') ?>
 
-<main id="content" class="page page__center page__column">
+<div class="book__main"><main id="content" class="page  page__center page__column">
 
   <div class="text note note-structure text-medium">
     <?= $page->text()->kt() ?>

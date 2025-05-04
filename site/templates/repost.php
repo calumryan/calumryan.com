@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-<main id="content" class="page page__center h-entry">
+<div class="book__main"><main id="content" class="page  page__center h-entry">
   <div class="note-text text note-structure text-medium"> 
   <?php snippet('repost',['post' => $page]) ?>
   <a class="u-url external-link link text-medium" href="<?= $page->blink() ?>">Go to this repost</a>

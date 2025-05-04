@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-<main id="content" class="page page__center">
+<div class="book__main"><main id="content" class="page  page__center">
 
     <article class="note note-structure note-text note-short h-entry">
         <h1 class="p-name" hidden><?= $page->title() ?></h1>

@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-<main id="content" class="page">
+<div class="book__main"><main id="content" class="page ">
 
     <article class="text note-structure h-entry text-medium">
       <?= $page->text()->kt() ?>
