@@ -9,6 +9,7 @@
       <h1 class="p-name" hidden><?= $page->title() ?></h1>
       <?php if ( $page->description()->isNotEmpty() ) : ?><p class="p-summary"><strong><?= $page->description(); ?></strong></p><?php endif; ?>
       <?= $page->text()->kt() ?>
+      <?php if ( $page->spanish()->isNotEmpty() ) : ?><div class="text-article" lang="es-ES"><?= $page->spanish()->kt() ?></div><?php endif; ?>
     </div>
     
 
