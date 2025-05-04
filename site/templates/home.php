@@ -22,9 +22,9 @@
 
       <?php foreach ($articles as $article): ?>
         <?php if ( $image = $article->og_thumbnail()->toFile() ) : ?>
-        <img src="<?= $image->resize(150,150,100)->url() ?>" alt="<?= $post->og_thumbnail_description(); ?>" aria-hidden="true" loading="lazy" width="150" height="150">
+        <img src="<?= $image->resize(150,150,100)->url() ?>" alt="<?= $article->og_thumbnail_description(); ?>" aria-hidden="true" loading="lazy" width="150" height="150">
         <?php elseif ( $article->thumbnail()->isNotEmpty() ) : ?>
-        <img src="<?= $article->thumbnail() ?>" alt="<?= $post->og_thumbnail_description(); ?>" aria-hidden="true" loading="lazy" width="150" height="150">
+        <img src="<?= $article->thumbnail() ?>" alt="<?= $article->og_thumbnail_description(); ?>" aria-hidden="true" loading="lazy" width="150" height="150">
         <?php else: ?>
         <svg class="icon" aria-hidden="true" width="80" height="80"><use xmlnsXlink="http://www.w3.org/1999/xlink" xlink:href="<?= $site->url() ?>/assets/icons/icons.sprite.svg#icon-post"></use></svg>
         <?php endif ?>
