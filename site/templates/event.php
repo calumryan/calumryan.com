@@ -2,7 +2,7 @@
 
 <div class="book__main"><main id="content" class="page  page__center">
 
-    <div class="note-text note-structure text-card h-entry">
+    <div class="note-text note-structure text-card h-entry text">
       <?= $page->text()->kt() ?>
       <p class="p-locality icon-inline heading-medium"><?php snippet('location', ['page' => $page]) ?><?= $page->city() ?></p>
       <p class="p-location h-card content-body highlight"><strong>Location:</strong> <?= $page->location() ?> </p>
