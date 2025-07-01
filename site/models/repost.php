@@ -1,26 +1,38 @@
 <?php
 
+use Kirby\Cms\Page;
+
 class RepostPage extends Page
 {
     /**
-     * Creates and stores a new page
+     * Creates and stores a new repost page with incremented numeric UID
      *
      * @param array $props
      * @return self
      */
-    public static function create(array $props)
+    public static function create(array $props): self
     {
-      $collection = page('reposts')->children()->sortBy('uid', 'desc')->limit(1);
+        $repostsPage = page('reposts');
+        $children = $repostsPage ? $repostsPage->children() : null;
 
-      foreach ($collection as $post):
-        $id = $post->uid();
-        $last = $id+1;
-      endforeach;
-  
-      $props['slug'] = '_' . $last;
-      $props['content']['title'] = date('F jS, Y');
-      $props['content']['uid'] = $last;
-  
-      return parent::create($props);
+        $maxUid = 0;
+
+        if ($children && $children->count() > 0) {
+            foreach ($children as $child) {
+                // Get uid from content, cast to int, fallback 0
+                $uid = (int) $child->content()->get('uid')->value();
+                if ($uid > $maxUid) {
+                    $maxUid = $uid;
+                }
+            }
+        }
+
+        $newUid = $maxUid + 1;
+
+        $props['slug'] = '_' . $newUid;
+        $props['content']['title'] = date('F jS, Y');
+        $props['content']['uid'] = $newUid;
+
+        return parent::create($props);
     }
 }

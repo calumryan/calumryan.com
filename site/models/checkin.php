@@ -1,29 +1,38 @@
 <?php
 
-// For a content file called `project.txt`
-// In general the class name is {{ProjectFileName}}Page
+use Kirby\Cms\Page;
 
-class checkinPage extends Page {
-  // all methods of the Page class are inherited and can be overridden here now.
-  /**
-   * Creates and stores a new page
-   *
-   * @param array $props
-   * @return self
-   */
-  public static function create(array $props)
-  {
-    $collection = page('checkins')->children()->sortBy('uid', 'desc')->limit(1);
+class CheckinPage extends Page
+{
+    /**
+     * Creates and stores a new checkin page with incremented numeric UID
+     *
+     * @param array $props
+     * @return self
+     */
+    public static function create(array $props): self
+    {
+        $checkinsPage = page('checkins');
+        $children = $checkinsPage ? $checkinsPage->children() : null;
 
-    foreach ($collection as $post):
-      $id = $post->uid();
-      $last = $id+1;
-    endforeach;
+        $maxUid = 0;
 
-    $props['slug'] = '_' . $last;
-    $props['content']['title'] = date('F jS, Y');
-    $props['content']['uid'] = $last;
+        if ($children && $children->count() > 0) {
+            foreach ($children as $child) {
+                // Get uid from content, cast to int, fallback 0
+                $uid = (int) $child->content()->get('uid')->value();
+                if ($uid > $maxUid) {
+                    $maxUid = $uid;
+                }
+            }
+        }
 
-    return parent::create($props);
-  }
+        $newUid = $maxUid + 1;
+
+        $props['slug'] = '_' . $newUid;
+        $props['content']['title'] = date('F jS, Y');
+        $props['content']['uid'] = $newUid;
+
+        return parent::create($props);
+    }
 }
