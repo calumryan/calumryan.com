@@ -48,4 +48,5 @@ columns:
             options:
               twitter: Twitter
           uid:
-            type: text
+              type: number
+              readonly: true
