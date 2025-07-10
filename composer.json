@@ -23,7 +23,10 @@
   },
   "require": {
     "php": ">=8.4.0",
-    "getkirby/cms": "^5.0"
+    "getkirby/cms": "^5.0",
+    "indieweb/mention-client": "^1.2",
+    "sylvainjule/locator": "^1.0",
+    "bnomei/kirby3-feed": "^1.6"
   },
   "config": {
     "optimize-autoloader": true,

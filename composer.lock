@@ -4,8 +4,90 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5b1f647bedac5d1269919c8f5708f49b",
+    "content-hash": "97036b80a37d0eabab32031c6c85c4e1",
     "packages": [
+        {
+            "name": "bnomei/kirby3-feed",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bnomei/kirby3-feed.git",
+                "reference": "1bb0078638f75395e3dbb64d010c6ae1aa252349"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bnomei/kirby3-feed/zipball/1bb0078638f75395e3dbb64d010c6ae1aa252349",
+                "reference": "1bb0078638f75395e3dbb64d010c6ae1aa252349",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.2",
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "getkirby/cms": "^4.0",
+                "php-coveralls/php-coveralls": "^2.4",
+                "phpunit/phpunit": "^9.5"
+            },
+            "suggest": {
+                "bnomei/kirby3-htmlhead": "Best-practice HTML Head Element extendable with snippets.",
+                "bnomei/kirby3-robots-txt": "Automatic robots.txt. Detects xmlsitemap.",
+                "bnomei/kirby3-security-headers": "CPS headers to make the the web a saver place. Sensible defaults with zero configuration."
+            },
+            "type": "kirby-plugin",
+            "extra": {
+                "kirby-cms-path": "tests/kirby"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bnomei\\": "classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bruno Meilick",
+                    "email": "b@bnomei.com"
+                }
+            ],
+            "description": "Generate a RSS/JSON/Sitemap-Feed from a Pages-Collection",
+            "keywords": [
+                "Sitemap",
+                "feed",
+                "json",
+                "kirby",
+                "kirby-cms",
+                "kirby-plugin",
+                "rss",
+                "rss-feed"
+            ],
+            "support": {
+                "issues": "https://github.com/bnomei/kirby3-feed/issues",
+                "source": "https://github.com/bnomei/kirby3-feed/tree/v1.7.0"
+            },
+            "funding": [
+                {
+                    "url": "https://buymeacoff.ee/bnomei",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://paypal.me/bnomei",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/bnomei",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/bnomei",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2024-08-19T08:18:07+00:00"
+        },
         {
             "name": "christian-riesen/base32",
             "version": "1.6.0",
@@ -272,16 +354,16 @@
         },
         {
             "name": "getkirby/cms",
-            "version": "5.0.0",
+            "version": "5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getkirby/kirby.git",
-                "reference": "2ff182ba39ddea19fa1615bd3733f734b5e53842"
+                "reference": "ddd11f9b4a23e0b5d306b146ca5d6b7a1c1909a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getkirby/kirby/zipball/2ff182ba39ddea19fa1615bd3733f734b5e53842",
-                "reference": "2ff182ba39ddea19fa1615bd3733f734b5e53842",
+                "url": "https://api.github.com/repos/getkirby/kirby/zipball/ddd11f9b4a23e0b5d306b146ca5d6b7a1c1909a9",
+                "reference": "ddd11f9b4a23e0b5d306b146ca5d6b7a1c1909a9",
                 "shasum": ""
             },
             "require": {
@@ -307,7 +389,7 @@
                 "phpmailer/phpmailer": "6.10.0",
                 "symfony/polyfill-intl-idn": "1.32.0",
                 "symfony/polyfill-mbstring": "1.32.0",
-                "symfony/yaml": "7.3.0"
+                "symfony/yaml": "7.3.1"
             },
             "replace": {
                 "symfony/polyfill-php72": "*"
@@ -372,7 +454,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2025-06-24T07:42:42+00:00"
+            "time": "2025-07-03T11:23:56+00:00"
         },
         {
             "name": "getkirby/composer-installer",
@@ -420,6 +502,52 @@
                 }
             ],
             "time": "2020-12-28T12:54:39+00:00"
+        },
+        {
+            "name": "indieweb/mention-client",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/indieweb/mention-client-php.git",
+                "reference": "6807f4b1b96df7f47ea425eebfc7c032768652cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/indieweb/mention-client-php/zipball/6807f4b1b96df7f47ea425eebfc7c032768652cf",
+                "reference": "6807f4b1b96df7f47ea425eebfc7c032768652cf",
+                "shasum": ""
+            },
+            "require": {
+                "mf2/mf2": ">=0.2",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "IndieWeb": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Aaron Parecki",
+                    "email": "aaron@parecki.com",
+                    "homepage": "http://aaronparecki.com/"
+                }
+            ],
+            "description": "Client library for sending webmention and pingback notifications",
+            "homepage": "https://github.com/indieweb/mention-client-php",
+            "support": {
+                "issues": "https://github.com/indieweb/mention-client-php/issues",
+                "source": "https://github.com/indieweb/mention-client-php/tree/1.2.1"
+            },
+            "time": "2021-02-02T13:13:07+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
@@ -542,6 +670,68 @@
                 "source": "https://github.com/thephpleague/color-extractor/tree/0.4.0"
             },
             "time": "2022-09-24T15:57:16+00:00"
+        },
+        {
+            "name": "mf2/mf2",
+            "version": "v0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/microformats/php-mf2.git",
+                "reference": "ddc56de6be62ed4a21f569de9b80e17af678ca50"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/microformats/php-mf2/zipball/ddc56de6be62ed4a21f569de9b80e17af678ca50",
+                "reference": "ddc56de6be62ed4a21f569de9b80e17af678ca50",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "mf2/tests": "dev-master#e9e2b905821ba0a5b59dab1a8eaf40634ce9cd49",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3.6.2"
+            },
+            "suggest": {
+                "barnabywalters/mf-cleaner": "To more easily handle the canonical data php-mf2 gives you",
+                "masterminds/html5": "Alternative HTML parser for PHP, for better HTML5 support."
+            },
+            "bin": [
+                "bin/fetch-mf2",
+                "bin/parse-mf2"
+            ],
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "Mf2/Parser.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "CC0-1.0"
+            ],
+            "authors": [
+                {
+                    "name": "Barnaby Walters",
+                    "homepage": "http://waterpigs.co.uk"
+                }
+            ],
+            "description": "A pure, generic microformats2 parser — makes HTML as easy to consume as a JSON API",
+            "keywords": [
+                "html",
+                "microformats",
+                "microformats 2",
+                "parser",
+                "semantic"
+            ],
+            "support": {
+                "issues": "https://github.com/microformats/php-mf2/issues",
+                "source": "https://github.com/microformats/php-mf2/tree/v0.5.0"
+            },
+            "time": "2022-02-10T01:05:27+00:00"
         },
         {
             "name": "michelf/php-smartypants",
@@ -727,6 +917,54 @@
                 "source": "https://github.com/php-fig/log/tree/3.0.2"
             },
             "time": "2024-09-11T13:17:53+00:00"
+        },
+        {
+            "name": "sylvainjule/locator",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sylvainjule/kirby-locator.git",
+                "reference": "2e0d626efd0964466ff4a667bfe9a3d10a3c0271"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sylvainjule/kirby-locator/zipball/2e0d626efd0964466ff4a667bfe9a3d10a3c0271",
+                "reference": "2e0d626efd0964466ff4a667bfe9a3d10a3c0271",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.1"
+            },
+            "type": "kirby-plugin",
+            "extra": {
+                "installer-name": "locator"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sylvain Julé",
+                    "email": "contact@sylvain-jule.fr"
+                }
+            ],
+            "description": "A map & geolocation field, built on top of open-source services / Mapbox",
+            "support": {
+                "issues": "https://github.com/sylvainjule/kirby-locator/issues",
+                "source": "https://github.com/sylvainjule/kirby-locator/tree/1.1.4"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/sylvainjl",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/sylvainjule",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-11-14T16:23:01+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -1121,16 +1359,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v7.3.0",
+            "version": "v7.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "cea40a48279d58dc3efee8112634cb90141156c2"
+                "reference": "0c3555045a46ab3cd4cc5a69d161225195230edb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/cea40a48279d58dc3efee8112634cb90141156c2",
-                "reference": "cea40a48279d58dc3efee8112634cb90141156c2",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/0c3555045a46ab3cd4cc5a69d161225195230edb",
+                "reference": "0c3555045a46ab3cd4cc5a69d161225195230edb",
                 "shasum": ""
             },
             "require": {
@@ -1173,7 +1411,7 @@
             "description": "Loads and dumps YAML files",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/yaml/tree/v7.3.0"
+                "source": "https://github.com/symfony/yaml/tree/v7.3.1"
             },
             "funding": [
                 {
@@ -1189,7 +1427,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-04-04T10:10:33+00:00"
+            "time": "2025-06-03T06:57:57+00:00"
         }
     ],
     "packages-dev": [],
