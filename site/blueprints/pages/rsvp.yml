@@ -52,10 +52,6 @@ columns:
           response:
             label: Response
             type: text
-          bridgy:
-            type: checkboxes
-            default: twitter
-            options:
-              twitter: Twitter
           uid:
-            type: text
+              type: number
+              readonly: true

@@ -22,11 +22,8 @@
     "source": "https://github.com/getkirby/starterkit"
   },
   "require": {
-    "php": ">=7.1.0",
-    "getkirby/cms": "^3.0",
-    "sylvainjule/locator": "^1.0",
-    "indieweb/mention-client": "^1.1.6",
-    "bnomei/kirby3-feed": "^1.6"
+    "php": ">=8.4.0",
+    "getkirby/cms": "^5.0"
   },
   "config": {
     "optimize-autoloader": true,
