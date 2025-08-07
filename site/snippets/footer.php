@@ -26,7 +26,7 @@
 
   </div>
 
-  <script src="<?= $site->url() ?>/assets/js/main.js?v20200704" defer="defer"></script>
+  <script src="<?= $site->url() ?>/assets/js/main.js?v20250718" defer="defer"></script>
 
 </body>
 </html>
