@@ -23,7 +23,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta name="robots" content="index,follow" />
   <?php snippet('head'); ?>
-  <link href="<?= $site->url() ?>/assets/css/main.css?v20250718" rel="stylesheet">
+  <link href="<?= $site->url() ?>/assets/css/main.css?v20251125" rel="stylesheet">
 </head>
 <body class="book">
 
@@ -45,7 +45,7 @@
 
           <div class="header__menu">
             <a class="header__link" href="<?= $site->url() ?>/site-menu">Site menu</a>
-            <a class="header__search" href="<?= $site->url() ?>/search" aria-label="Search website"><svg class="icon icon--search" width="30" height="30"><use xmlnsXlink="http://www.w3.org/1999/xlink" xlink:href="<?= $site->url() ?>/assets/icons/icons.sprite.svg#icon-search"></use></svg></a>
+            <a class="header__search" href="<?= $site->url() ?>/search" aria-label="Search website"><svg class="icon icon--search" width="30" height="30"><use xmlnsXlink="http://www.w3.org/1999/xlink" xlink:href="<?= url('assets/icons/icons.sprite.svg') ?>#icon-search"></use></svg></a>
           </div>
 
         </div>
@@ -55,7 +55,7 @@
           <ul>
             <?php foreach ($site_menu->links()->toStructure() as $item): ?>
             <?php if ( $item->special()->isNotEmpty() ) : ?>
-            <li><a class="link icon-inline bg-fallback bg-<?= str_replace('/','',$item->url()) ?>" href="<?= $item->url() ?>"><?php if ( $item->icon()->isNotEmpty() ): ?><svg aria-hidden="true" focusable="false" class="icon" role="img" width="20" height="20"><use xmlnsXlink="http://www.w3.org/1999/xlink" xlink:href="<?= $site->url() ?>/assets/icons/icons.sprite.svg#icon-<?= $item->icon() ?>"></use></svg><?php endif; ?><?= $item->title() ?></a></li>
+            <li><a class="link icon-inline bg-fallback bg-<?= str_replace('/','',$item->url()) ?>" href="<?= $item->url() ?>"><?php if ( $item->icon()->isNotEmpty() ): ?><svg aria-hidden="true" focusable="false" class="icon" role="img" width="20" height="20"><use xmlnsXlink="http://www.w3.org/1999/xlink" xlink:href="<?= url('assets/icons/icons.sprite.svg') ?>#icon-<?= $item->icon() ?>"></use></svg><?php endif; ?><?= $item->title() ?></a></li>
             <?php endif ?>
             <?php endforeach ?>
           </ul>

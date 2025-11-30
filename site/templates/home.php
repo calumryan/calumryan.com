@@ -28,7 +28,7 @@
           <?php elseif ( $article->thumbnail()->isNotEmpty() ) : ?>
           <img src="<?= $article->thumbnail() ?>" alt="<?= $article->thumbnail()->alt(); ?>" loading="lazy" width="150" height="150">
           <?php else: ?>
-          <svg class="icon" aria-hidden="true" width="80" height="80"><use xmlnsXlink="http://www.w3.org/1999/xlink" xlink:href="<?= $site->url() ?>/assets/icons/icons.sprite.svg#icon-post"></use></svg>
+          <svg class="icon" aria-hidden="true" width="80" height="80"><use xmlnsXlink="http://www.w3.org/1999/xlink" xlink:href="<?= url('assets/icons/icons.sprite.svg#icon-post') ?>"></use></svg>
           <?php endif ?>
           
           <header>

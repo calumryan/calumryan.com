@@ -63,6 +63,12 @@ columns:
           location:
             label: Location
             type: text
+          view_video:
+            label: Video
+            type: text
+          view_slides:
+            label: Slides
+            type: text
           city:
             type: text
           timezone:

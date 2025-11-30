@@ -34,7 +34,7 @@ try {
 
             <h2 id="webmentions">Webmentions</h2>
 
-            <a href="https://indieweb.org/Webmention" class="webmentions__info link" target="_blank" rel="noopener noreferrer"><svg class="icon icon--question" role="img" aria-hidden="true" width="24" height="24"><use xmlnsXlink="http://www.w3.org/1999/xlink" xlink:href="<?= $site->url() ?>/assets/icons/icons.sprite.svg#icon-question"></use></svg>What’s this?</a>
+            <a href="https://indieweb.org/Webmention" class="webmentions__info link" target="_blank" rel="noopener noreferrer"><svg class="icon icon--question" role="img" aria-hidden="true" width="24" height="24"><use xmlnsXlink="http://www.w3.org/1999/xlink" xlink:href="<?= url('assets/icons/icons.sprite.svg') ?>#icon-question"></use></svg>What’s this?</a>
 
         </div>
 

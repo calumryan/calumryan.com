@@ -23,7 +23,7 @@
 
 <?php if ( isset($latitude) ) : ?>
 <?php $string = 'Checked in at '; ?>
-<a class="link p-location" href="http://www.openstreetmap.org/?mlat=<?= $latitude ?>&mlon=<?= $longitude ?>&zoom=12"><svg class="icon icon--location" aria-hidden="true" width="20" height="20"><use xmlnsXlink="http://www.w3.org/1999/xlink" xlink:href="<?= $site->url() ?>/assets/icons/icons.sprite.svg#icon-location"></use></svg><span class="sr-only">View location on OpenStreet map of <?= str_replace($string,'', $page->text()) ?></span></a>   
+<a class="link p-location" href="http://www.openstreetmap.org/?mlat=<?= $latitude ?>&mlon=<?= $longitude ?>&zoom=12"><svg class="icon icon--location" aria-hidden="true" width="20" height="20"><use xmlnsXlink="http://www.w3.org/1999/xlink" xlink:href="<?= url('assets/icons/icons.sprite.svg') ?>#icon-location"></use></svg><span class="sr-only">View location on OpenStreet map of <?= str_replace($string,'', $page->text()) ?></span></a>   
 <span class="h-adr" hidden>
 <?php if ( $page->locatility()->isNotEmpty() ) : ?><span class="p-locality"><?= $page->locatility() ?></span><?php endif ?>
 <?php if ($page->region()->isNotEmpty() ) : ?><span class="p-region"><?= $page->region() ?></span>,<?php endif ?>
