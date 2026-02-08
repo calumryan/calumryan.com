@@ -87,6 +87,14 @@
   left: 0;
 }
 
+.text a.webmention__author.h-card.u-url {
+  position: static;
+}
+
+.webmention__author__photo.u-photo {
+  width: 60px;
+}
+
 .webmentions__info,
 .webmentions__metric {
   display: flex;
