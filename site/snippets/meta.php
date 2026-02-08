@@ -1,5 +1,5 @@
-<link rel="pingback" href="https://webmention.io/calumryan.com/xmlrpc" />
-<link rel="webmention" href="https://webmention.io/calumryan.com/webmention" />
+<link rel="pingback" href="https://webmention.io/www.calumryan.com/xmlrpc" />
+<link rel="webmention" href="https://webmention.io/www.calumryan.com/webmention" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@calum_ryan" />
 <meta name="twitter:site:id" content="77453936" />

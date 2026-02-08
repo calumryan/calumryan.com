@@ -36,7 +36,7 @@ fields:
   feature_images:
     label: Images
     type: files
-    uploads: false
+    uploads: true
     min: 0
     max: 4
     cover: true
