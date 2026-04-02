@@ -23,7 +23,11 @@
         <div class="band-content bg-articles">
 
         <?php foreach ($articles as $article): ?>
-          <?php if ( $image = $article->og_thumbnail()->toFile() ) : ?>
+
+          <?php $thumbnailType = strtolower(trim($article->thumbnail_type()->value())); ?>
+          <?php if ($thumbnailType === 'svg') : ?>
+          <svg class="icon" aria-hidden="true" width="80" height="80"><use xmlnsXlink="http://www.w3.org/1999/xlink" xlink:href="<?= url('assets/icons/icons.sprite.svg#icon-post') ?>"></use></svg>
+          <?php elseif ( $image = $article->og_thumbnail()->toFile() ) : ?>
           <img src="<?= $image->resize(150,150,100)->url() ?>" alt="<?= $image->alt(); ?>" loading="lazy" width="150" height="150">
           <?php elseif ( $article->thumbnail()->isNotEmpty() ) : ?>
           <img src="<?= $article->thumbnail() ?>" alt="<?= $article->thumbnail()->alt(); ?>" loading="lazy" width="150" height="150">
