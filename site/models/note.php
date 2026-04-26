@@ -4,10 +4,10 @@ use Kirby\Cms\Page;
 
 class NotePage extends Page
 {
-    public static function create(array $props): self
+    public function createNote(array $props): Page
     {
         $notesPage = page('notes');
-        $children = $notesPage ? $notesPage->children() : null;
+        $children  = $notesPage?->children() ?? null;
 
         $maxUid = 0;
 
@@ -22,14 +22,17 @@ class NotePage extends Page
 
         $newUid = $maxUid + 1;
 
-        // ⭐ Force correct template
+        // Force template
         $props['template'] = 'note';
 
-        // Your existing logic
-        $props['slug'] = (string) $newUid;
-        $props['content']['title'] = date('F jS, Y');
-        $props['content']['uid'] = $newUid;
+        // DO NOT set slug — let Kirby generate it
+        unset($props['slug']);
 
-        return parent::create($props);
+        // Set content fields
+        $props['content']['title'] = date('F jS, Y');
+        $props['content']['uid']   = $newUid;
+
+        // Use the *site* createChild(), not parent::create()
+        return page('notes')->createChild($props);
     }
 }

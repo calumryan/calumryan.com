@@ -1,0 +1,13 @@
+=== MICROPUB REQUEST ===
+POST: Array
+(
+    [h] => entry
+    [content] => Micropub test of creating a basic h-entry
+)
+
+FILES: Array
+(
+)
+
+RAW: h=entry&content=Micropub+test+of+creating+a+basic+h-entry
+PAGE ERROR: Call to a member function impersonate() on null
