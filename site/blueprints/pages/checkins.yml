@@ -1,32 +1,30 @@
 title: Checkins
-
-# This tells Kirby what child templates are allowed
-pages:
-  template:
-    - checkin  # allow creating checkin pages
-  draft: true # optional: allow drafts
-
 icon: 🗺
-
-sections:
-  list:
-    type: pages
-    template: checkin
-    headline: All checkins
-    sortable: true
-    sortBy: date desc
-
+status:
+  draft: true
+  unlisted: true
+  listed: true
+  
 columns:
   - width: 1/2
+    # In the first column, we reuse the `checkins` section
+    # (defined in `/site/blueprints/sections/checkins.yml` twice with different page status and headline
     sections:
       drafts:
         extends: sections/checkins
         headline: Drafts
         status: draft
 
+      unlisted:
+        extends: sections/checkins
+        headline: In Review
+        status: unlisted
+
   - width: 1/2
+    # In the second column, we reuse the same section, this time for listed pages and with a different headline
     sections:
       listed:
         extends: sections/checkins
         headline: Published
         status: listed
+# More about pages sections: https://getkirby.com/docs/reference/panel/sections/pages

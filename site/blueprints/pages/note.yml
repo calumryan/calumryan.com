@@ -37,9 +37,14 @@ fields:
     label: Images
     type: files
     uploads: true
+    accept:
+      - image/jpeg
+      - image/png
+      - image/webp
     min: 0
     max: 4
     cover: true
-  tags: true
+  tags:
+    type: tags
   slug:
     type: hidden

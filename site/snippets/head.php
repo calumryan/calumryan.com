@@ -1,5 +1,5 @@
 <?php snippet('meta') ?>
-<link rel="self" href="https://www.calumryan.com/">
+<link rel="self" href="https://calumryan.com/">
 <link rel="me" href="https://bsky.app/profile/calumryan.bsky.social">
 <link rel="me" href="https://toot.cafe/@calumryan">
 <link rel="me" href="https://micro.blog/calumryan" />

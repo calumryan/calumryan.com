@@ -11,8 +11,11 @@
 
     <?php
     // Decode JSON fields if present
-    $venue   = $page->location_data()->isNotEmpty() ? json_decode($page->location_data()->value(), true) : null;
-    $address = $page->address_data()->isNotEmpty() ? json_decode($page->address_data()->value(), true) : null;
+    $rawVenue = str_replace(["\n", "\r"], '', $page->location_data()->value());
+    $venue = $rawVenue ? json_decode($rawVenue, true) : null;
+
+    $rawAddress = str_replace(["\n", "\r"], '', $page->address_data()->value());
+    $address = $rawAddress ? json_decode($rawAddress, true) : null;
     ?>
 
     <?php if ($venue): ?>

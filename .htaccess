@@ -18,12 +18,18 @@
 
 # rewrite rules
 <IfModule mod_rewrite.c>
-
 RewriteEngine On
+
+# Force Micropub to Kirby (catch all variants)
+RewriteRule ^micropub(/.*)?$ index.php [L,QSA]
+
+# Redirect non-www to www
 RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^calumryan\.com$ [NC]
 RewriteRule ^(.*)$ https://www.calumryan.com/$1 [L,R=301]
-RewriteRule ^.well-known/(host-meta|webfinger).* https://fed.brid.gy/$0  [redirect=302,last]
+
+# Bridgy Fed
+RewriteRule ^.well-known/(host-meta|webfinger).* https://fed.brid.gy/$0 [R=302,L]
 
 # block files and folders beginning with a dot, such as .git
 # except for the .well-known folder, which is used for Let's Encrypt and security.txt

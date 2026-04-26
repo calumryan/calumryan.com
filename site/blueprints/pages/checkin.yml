@@ -1,6 +1,9 @@
 title: Checkin
-num: date
 icon: 🗺
+num: date
+# options:
+#   create: true
+#   update: true
 
 status:
   draft:
@@ -23,27 +26,32 @@ tabs:
           title:
             type: text
             readonly: true
+
           text:
             type: textarea
             size: small
             readonly: true
+
           syndication:
             label: Syndication (legacy single URL)
             type: url
-            size: small
             readonly: true
+
           urls:
             label: Syndication URLs
             type: textarea
             readonly: true
+
           location_data:
             label: Location data (h-card JSON)
             type: textarea
             readonly: true
+
           address_data:
             label: Address data (h-adr JSON)
             type: textarea
             readonly: true
+
       - width: 1/3
         type: fields
         fields:
@@ -51,9 +59,7 @@ tabs:
             type: date
             time: true
             readonly: true
-          uid:
-            type: number
-            readonly: true
+
           feature_images:
             label: Images
             type: files
@@ -63,7 +69,9 @@ tabs:
             min: 0
             max: 8
             cover: true
-          tags: true
+
+          tags:
+            type: tags
 
   meta:
     label: Legacy content
@@ -73,14 +81,18 @@ tabs:
         fields:
           redirect:
             type: text
+
           feature_image:
             type: text
+
           alternative_text:
             type: text
+
       - width: 1/2
         type: fields
         fields:
           latitude:
             type: text
+
           longitude:
             type: text

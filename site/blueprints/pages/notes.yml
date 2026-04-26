@@ -1,6 +1,13 @@
 # Each page blueprint must have a title, the title may be different from the file name
 title: Notes
 
+options:
+  create: true
+
+pages:
+  template:
+    - note
+    
 # Each page can have an icon that is shown in page listings when no preview image is available.
 icon: 📖
 
