@@ -1,1 +1,1 @@
-<a href="<?= $site->url() ?>" class="intro-anchor u-url u-uid" rel="author"><img src="/assets/images/icon.png?v202201021" alt="profile of Calum Ryan" class="u-photo" width="115" height="115"></a>
+<a href="https://www.calumryan.com/" class="intro-anchor u-url u-uid" rel="me author"><img src="/assets/images/icon.png?v202201021" alt="profile of Calum Ryan" class="u-photo" width="115" height="115"></a>

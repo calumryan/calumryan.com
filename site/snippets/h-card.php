@@ -3,7 +3,8 @@
 <h1 lang="it">Ciao!</h1>
 </div>
 <div class="p-note">
-<?= $page->special()->kt() ?>
+<p>I'm <a href="https://www.calumryan.com/about" class="p-name">Calum Ryan</a>, I code, design, speak and write about websites, focusing on <strong>accessibility</strong>, <strong>inclusivity</strong> and <strong>performance</strong>.</p>
+<p>I work for <a href="https://www.gov.uk/government/organisations/government-digital-service">GDS</a> as a Senior Accessibility Specialist in London.</p>
 </div>
 <div hidden>
 <a rel="me" href="https://fed.brid.gy/r/https://calumryan.com/">Web site</a>

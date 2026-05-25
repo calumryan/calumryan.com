@@ -48,3 +48,8 @@ fields:
     type: tags
   slug:
     type: hidden
+  lat:
+    type: hidden
+  lon:
+    type: hidden
+
