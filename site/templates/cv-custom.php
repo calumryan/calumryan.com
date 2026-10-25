@@ -43,6 +43,8 @@
           <hr />
           <?php endif; ?>
 
+          <?php if ( $page->address()->isNotEmpty() ) : ?>
+
           <h2>Contact me</h2>
 
           <dl>
@@ -61,6 +63,8 @@
             <dt>Website</dt>
             <dd><a href="https://www.calumryan.com">calumryan.com</a></dd>
           </dl>
+
+          <?php endif; ?>
 
         </article>
 
